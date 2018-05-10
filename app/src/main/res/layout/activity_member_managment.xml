@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_member_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp106">
+
+            <com.merrichat.net.view.CircleImageView
+                android:id="@+id/civ_member_photo"
+                android:layout_width="@dimen/dp76"
+                android:layout_height="@dimen/dp76"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@mipmap/ic_preloading" />
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_toRightOf="@+id/civ_member_photo"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp22" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp44"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gossip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_gossip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="禁言"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_gossip"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp"
+                    app:kswThumbRangeRatio="1.4" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/base_E2E5E7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_prohibition_trading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_prohibition_trading"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="禁止发布交易"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_ban_trade"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp"
+                    app:kswThumbRangeRatio="1.4" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/base_E2E5E7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_administrator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_set_administrator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="设为管理员"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_master"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp"
+                    app:kswThumbRangeRatio="1.4" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/base_E2E5E7" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_report"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="举报"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="-0.5dp"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/base_E2E5E7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_remove_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp35"
+        android:layout_marginRight="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp35"
+        android:background="@drawable/shape_onclick_new"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="踢出群"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+</LinearLayout>

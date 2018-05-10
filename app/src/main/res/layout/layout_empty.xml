@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.merrichat.net.view.DrawableCenterTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:drawablePadding="@dimen/dp32"
+    android:drawableTop="@mipmap/icon_empty"
+    android:gravity="center"
+    android:text="暂无数据哦~"
+    android:textColor="@color/base_888888"
+    android:textSize="14sp"
+    android:visibility="gone">
+
+</com.merrichat.net.view.DrawableCenterTextView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp55"
+    android:background="@color/white">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        app:placeholderImage="@mipmap/ic_preloading"
+        app:roundAsCircle="true" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/iv_header"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="啊君安"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/sp15" />
+
+        <View
+            style="@style/line_width_match"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

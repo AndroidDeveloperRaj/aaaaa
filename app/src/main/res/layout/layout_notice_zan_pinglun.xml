@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--关键代码解决隐藏所有子控件，导致无法下拉刷新的bug，不要删-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <!--关键代码解决隐藏所有子控件，导致无法下拉刷新的bug，不要删-->
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:id="@+id/sml_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="gone"
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true">
+
+        <LinearLayout
+            android:id="@+id/ll_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_notice"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:src="@mipmap/icon_notice" />
+
+                <TextView
+                    android:id="@+id/tv_chatPerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/iv_notice"
+                    android:text="通知"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_notice_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_tip_number"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp70"
+                android:background="@color/line_grayD9" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete_notice"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:id="@+id/sml_zan_pl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="gone"
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true">
+
+        <LinearLayout
+            android:id="@+id/ll_zan_pl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_zan_pl"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:src="@mipmap/icon_zan_pl" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/iv_zan_pl"
+                    android:text="赞和评论"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_pl_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_tip_number"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp70"
+                android:background="@color/line_grayD9" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete_zan_pl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:id="@+id/sml_group_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="gone"
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true">
+
+        <LinearLayout
+            android:id="@+id/ll_group_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_group_notice"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:src="@mipmap/quntongzhi_icon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/iv_group_notice"
+                    android:text="群通知"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_group_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_tip_number"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp70"
+                android:background="@color/line_grayD9" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete_group_notice"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:id="@+id/sml_express_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="gone"
+        app:ios="false"
+        app:leftSwipe="true"
+        app:swipeEnable="true">
+
+        <LinearLayout
+            android:id="@+id/ll_express_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_express_notice"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:src="@mipmap/kuaiditongzhi_icon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/iv_express_notice"
+                    android:text="快递通知"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_express_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:background="@drawable/shape_tip_number"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp70"
+                android:background="@color/line_grayD9" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete_express_notice"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+</LinearLayout>

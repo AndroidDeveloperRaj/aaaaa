@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp71"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp71"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp70"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.merrichat.net.view.CircleImageView
+                android:id="@+id/civ_new_friends"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@mipmap/ic_preloading" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_toLeftOf="@+id/tv_invite"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_new_friends_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp6"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/base_888888"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@drawable/shape_onclick"
+                    android:paddingBottom="@dimen/dp4"
+                    android:paddingLeft="@dimen/dp14"
+                    android:paddingRight="@dimen/dp14"
+                    android:paddingTop="@dimen/dp4"
+                    android:text="接受"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/base_E2E5E7" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/dp70"
+        android:background="@color/red"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

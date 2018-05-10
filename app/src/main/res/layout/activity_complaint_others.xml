@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/activity_title" />
+
+    <com.merrichat.net.view.MyScrollView
+        android:id="@+id/sv_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit_area"
+        android:layout_below="@+id/ic_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="请选择投诉原因"
+                android:textColor="@color/base_888888"
+                android:textSize="@dimen/dp13" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="添加图片证据（最多9张）"
+                    android:textSize="@dimen/dp15" />
+
+                <View style="@style/line_width_match" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_complanit_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp210"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="请输入投诉原因（1-200字）"
+                    android:padding="@dimen/dp10"
+                    android:textColorHint="@color/base_9E9FAB"
+                    android:textSize="@dimen/dp15" />
+
+                <LinearLayout
+                    android:id="@+id/ll_text_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:paddingBottom="@dimen/dp15"
+                    android:paddingRight="@dimen/dp15">
+
+                    <TextView
+                        android:id="@+id/tv_text_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/base_9E9FAB"
+                        android:textSize="@dimen/dp15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/200"
+                        android:textColor="@color/base_9E9FAB"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.merrichat.net.view.MyScrollView>
+
+    <TextView
+        android:id="@+id/tv_submit_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/base_FF3D6F"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+</RelativeLayout>

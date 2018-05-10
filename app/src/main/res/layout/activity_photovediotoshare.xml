@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/activity_title" />
+
+    <ScrollView
+        android:id="@+id/sv_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dtv_toshare"
+        android:layout_below="@+id/ic_title"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp135"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@color/normal_black">
+
+                    <ImageView
+                        android:id="@+id/cvv_videoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/text_ffffff_13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:text="预览封面" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_biaoqian"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tv_biaoqian_content"
+                            style="@style/text_222222_15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="添加标签" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@mipmap/xiayiceng_button_tongyong2x" />
+                    </RelativeLayout>
+
+                    <View style="@style/line_width_match" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            style="@style/text_222222_15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="添加位置" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@mipmap/xiayiceng_button_tongyong2x" />
+                    </RelativeLayout>
+
+                    <View style="@style/line_width_match" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_yinyue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp44"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_yinyue_content"
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="添加音乐" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@mipmap/xiayiceng_button_tongyong2x" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp190"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp45">
+
+                        <EditText
+                            android:id="@+id/et_title"
+                            style="@style/text_222222_15sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="添加标题"
+                            android:textColorHint="@color/text_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_title_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/base_9E9FAB" />
+                    </RelativeLayout>
+
+                    <View style="@style/line_width_match" />
+
+                    <com.merrichat.net.view.ScrollEditText
+                        android:id="@+id/et_content"
+                        style="@style/text_222222_15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp140"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="写出想说的话吧~"
+                        android:paddingBottom="@dimen/dp10"
+                        android:paddingTop="@dimen/dp10"
+                        android:textColorHint="@color/text_gray" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_quanxian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp44"
+                android:background="@color/white">
+
+                <com.merrichat.net.view.DrawableCenterTextView
+                    android:id="@+id/tv_gong_kai"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="公开"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.merrichat.net.view.DrawableCenterTextView
+                    android:id="@+id/tv_hao_you"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="好友"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.merrichat.net.view.DrawableCenterTextView
+                    android:id="@+id/tv_si_mi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="私密"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <com.merrichat.net.view.DrawableCenterTextView
+                    android:id="@+id/tv_mo_sheng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:text="仅陌生"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_photovedio_view"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_share_pengyouquan"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/fenxiang_small_pengyouquan3x"
+                    android:drawablePadding="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp15"
+                    android:text="分享朋友圈"
+                    android:textColor="@drawable/selector_photovedio_dingwei" />
+
+                <TextView
+                    android:id="@+id/tv_weixin_haoyou"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/fenxiang_small_weixin3x"
+                    android:drawablePadding="@dimen/dp10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp15"
+                    android:text="微信好友"
+                    android:textColor="@drawable/selector_photovedio_dingwei" />
+
+
+            </LinearLayout>
+
+            <com.merrichat.net.view.NoScrollRecyclerView
+                android:id="@+id/rv_receclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp30"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.merrichat.net.view.DrawableCenterTextView
+        android:id="@+id/dtv_toshare"
+        style="@style/text_ffffff_15sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/normal_red"
+        android:drawablePadding="@dimen/dp10"
+        android:drawableRight="@mipmap/fenxiang_button2x"
+        android:gravity="center"
+        android:text="发布" />
+</RelativeLayout>

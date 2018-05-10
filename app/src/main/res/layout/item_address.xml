@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="尼古拉斯"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="15888888888"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp12"
+        android:text="北京市海淀区花园北路祁家豁子公交站环星大厦德胜 门地铁边国贸大厦"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/sp15" />
+
+    <View style="@style/line_width_left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp37"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp30"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp5"
+            android:text="编辑"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp10"
+            android:text="删除"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+    <View style="@style/line_width_match" />
+</LinearLayout>

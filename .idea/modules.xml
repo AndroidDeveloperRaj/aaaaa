@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PullToRefreshLib/PullToRefreshLib.iml" filepath="$PROJECT_DIR$/PullToRefreshLib/PullToRefreshLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aaaaa.iml" filepath="$PROJECT_DIR$/aaaaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bubbleseekbar/bubbleseekbar.iml" filepath="$PROJECT_DIR$/bubbleseekbar/bubbleseekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camera/camera.iml" filepath="$PROJECT_DIR$/camera/camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matisse/matisse.iml" filepath="$PROJECT_DIR$/matisse/matisse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nicedialog/nicedialog.iml" filepath="$PROJECT_DIR$/nicedialog/nicedialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/takephoto_library/takephoto_library.iml" filepath="$PROJECT_DIR$/takephoto_library/takephoto_library.iml" />
+    </modules>
+  </component>
+</project>

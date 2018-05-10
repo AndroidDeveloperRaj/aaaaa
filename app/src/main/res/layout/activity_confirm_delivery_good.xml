@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_sellorder_info" />
+
+        <TextView
+            style="@style/text_ff3d6f_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp25"
+            android:paddingTop="@dimen/dp10"
+            android:text="该商品为实物商品，请补全运单信息，自取或送货上门无需运单号" />
+
+        <LinearLayout
+            android:id="@+id/rl_quanxian"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@color/white">
+
+            <com.merrichat.net.view.DrawableCenterTextView
+                android:id="@+id/tv_kuai_di"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                android:drawablePadding="@dimen/dp5"
+                android:text="快递"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <com.merrichat.net.view.DrawableCenterTextView
+                android:id="@+id/tv_zi_qu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                android:drawablePadding="@dimen/dp5"
+                android:text="自取"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <com.merrichat.net.view.DrawableCenterTextView
+                android:id="@+id/tv_shang_men"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/selector_tuwen_quanxian"
+                android:drawablePadding="@dimen/dp5"
+                android:text="送货上门"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_express_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_exp_text"
+                style="@style/text_222222_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp10"
+                android:text="快递公司" />
+
+            <TextView
+                android:id="@+id/tv_express_name"
+                style="@style/text_222222_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/tv_exp_text"
+                android:paddingLeft="@dimen/dp10"
+                android:text="" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/sp15"
+                android:src="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+
+        <View style="@style/line_width_left" />
+
+        <RelativeLayout
+            android:id="@+id/ll_express_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_num_text"
+                style="@style/text_222222_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/dp10"
+                android:text="运单号    " />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_express_num"
+                style="@style/text_222222_15sp"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/iv_sao_yun_hao"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="@string/filter_vcode"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/tv_num_text"
+                android:paddingLeft="@dimen/dp10"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/iv_sao_yun_hao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/sp15"
+                android:src="@mipmap/saoyisaohong" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        style="@style/text_ffffff_14sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ffff3d6f"
+        android:gravity="center"
+        android:text="确认发货" />
+</RelativeLayout>

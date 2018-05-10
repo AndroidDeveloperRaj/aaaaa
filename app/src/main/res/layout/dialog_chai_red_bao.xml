@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/chaihongbao_bg_2x"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/cv_red_photo"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp15"
+            android:src="@mipmap/ic_preloading" />
+
+
+        <TextView
+            android:id="@+id/tv_red_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/tv_red_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp30" />
+
+
+        <TextView
+            android:id="@+id/tv_red_chai"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_marginTop="@dimen/dp50"
+            android:background="@drawable/shape_red_chai_yellow"
+            android:gravity="center"
+            android:text="拆红包"
+            android:textColor="#d0021b"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_product_item" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                style="@style/text_888888_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费" />
+
+            <TextView
+                android:id="@+id/tv_express_fee"
+                style="@style/text_222222_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                style="@style/text_888888_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品数量" />
+
+            <TextView
+                android:id="@+id/tv_product_num"
+                style="@style/text_222222_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                style="@style/text_222222_13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单总金额(含运费)" />
+
+            <TextView
+                android:id="@+id/tv_pay_totall"
+                style="@style/text_ff3d6f_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/fet_refuse_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp15"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textColorHint="@color/base_9E9FAB"
+                android:textSize="@dimen/sp15" />
+
+            <EditText
+                android:id="@+id/et_refuse_reason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入拒绝退款原因(最多200字)"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp15"
+                android:textColorHint="@color/base_9E9FAB"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ffff3d6f"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+</RelativeLayout>

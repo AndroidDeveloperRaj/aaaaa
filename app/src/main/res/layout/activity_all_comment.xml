@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/title_include"
+        layout="@layout/activity_title"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_below="@+id/title_include"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/layout_empty"/>
+
+        </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:elevation="@dimen/dp10"
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/editText_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp7"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp7"
+            android:layout_toLeftOf="@+id/btn_show_release"
+            android:background="@drawable/shape_white"
+            android:hint="评论才是最真实的哦~"
+            android:paddingLeft="@dimen/dp10"
+            android:textSize="@dimen/dp14"/>
+
+        <Button
+            android:id="@+id/btn_show_release"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/normal_red"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp13"/>
+    </RelativeLayout>
+</RelativeLayout>

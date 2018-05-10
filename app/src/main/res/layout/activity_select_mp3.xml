@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_text" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.merrichat.net.view.ClearEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/shape_seach_music"
+            android:hint="搜索音乐"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingRight="@dimen/dp10"
+            android:singleLine="true"
+            android:textColor="@color/normal_black"
+            android:textColorHint="@color/normal_gray"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp25"
+            android:src="@mipmap/search" />
+    </RelativeLayout>
+
+
+</LinearLayout>

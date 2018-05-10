@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp64"
+                    android:gravity="center_vertical"
+                    android:text="注册账号" />
+
+                <TextView
+                    android:id="@+id/tv_register_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dp10"
+                    android:textColor="@color/FF3D6F"
+                    android:textSize="@dimen/sp15" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:id="@+id/rl_new_tongzhi"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="新消息通知" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/dp10"
+                    android:src="@mipmap/xiayiceng_button_tongyong2x" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:id="@+id/rl_home_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp64"
+                    android:gravity="center_vertical"
+                    android:text="首页设置" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/dp10"
+                    android:src="@mipmap/xiayiceng_button_tongyong2x" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:id="@+id/rl_yinsi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp64"
+                    android:gravity="center_vertical"
+                    android:text="隐私" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/dp10"
+                    android:src="@mipmap/xiayiceng_button_tongyong2x" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:id="@+id/rl_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="@dimen/dp10">
+
+                <View style="@style/line_width_match" />
+
+                <TextView
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp64"
+                    android:gravity="center_vertical"
+                    android:text="修改密码" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/dp10"
+                    android:src="@mipmap/xiayiceng_button_tongyong2x" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:id="@+id/rl_functions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="@dimen/dp10">
+
+                <TextView
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp64"
+                    android:gravity="center_vertical"
+                    android:text="功能" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/dp10"
+                    android:src="@mipmap/xiayiceng_button_tongyong2x" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp35"
+                android:background="@drawable/shape_onclick"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

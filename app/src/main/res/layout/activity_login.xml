@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/ll_login_root">
+
+    <LinearLayout
+        android:id="@+id/rel_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/login_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp16"
+            android:src="@mipmap/login_close"/>
+
+        <LinearLayout
+            android:id="@+id/lin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp38"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp2.5"
+                    android:gravity="center"
+                    android:text="登录"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/sp22"/>
+
+                <TextView
+                    android:id="@+id/textView_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp50"
+                    android:layout_marginRight="@dimen/dp2.5"
+                    android:gravity="center"
+                    android:text="注册"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/sp22"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/textView_line"
+                android:layout_width="@dimen/dp49"
+                android:layout_height="@dimen/dp2.5"
+                android:background="@color/normal_red"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/rel_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp40">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp38"
+                android:paddingRight="@dimen/dp38">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机号"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15"/>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="@dimen/dp0.5"
+                        android:layout_height="@dimen/dp15"
+                        android:layout_marginLeft="@dimen/dp12"
+                        android:layout_marginRight="@dimen/dp12"
+                        android:background="@color/line_grayD9"/>
+
+                    <com.merrichat.net.view.ClearEditText
+                        android:id="@+id/editText_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:background="@null"
+                        android:hint="请输入手机号"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:textColor="@color/normal_black"
+                        android:textColorHint="@color/normal_gray"
+                        android:textSize="@dimen/sp15"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/line_grayD9"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.merrichat.net.view.ClearEditText
+                        android:id="@+id/editText_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_toLeftOf="@+id/checkbox_login"
+                        android:background="@null"
+                        android:hint="请输入密码"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="@color/normal_black"
+                        android:textColorHint="@color/normal_gray"
+                        android:textSize="@dimen/sp15"/>
+
+                    <CheckBox
+                        android:id="@+id/checkbox_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:button="@drawable/checkbox_login_selector"
+                        android:visibility="gone"
+                        android:paddingRight="@dimen/dp2"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/line_grayD9"/>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp35"
+                    android:background="@drawable/shape_button_login"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_marginRight="@dimen/dp2"/>
+
+                <TextView
+                    android:id="@+id/tv_forget_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="忘记密码?"
+                    android:textColor="@color/blue_0050FF"
+                    android:textSize="@dimen/sp13"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!--   以上是登录  以下是注册     -->
+
+
+        <LinearLayout
+            android:id="@+id/lin_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp40"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp38"
+            android:paddingRight="@dimen/dp38"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/sp15"/>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="@dimen/dp0.5"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:background="@color/line_grayD9"/>
+
+                <com.merrichat.net.view.ClearEditText
+                    android:id="@+id/editText_phone_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:phoneNumber="true"
+                    android:singleLine="true"
+                    android:textColor="@color/normal_black"
+                    android:textColorHint="@color/normal_gray"
+                    android:textSize="@dimen/sp15"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/line_grayD9"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.merrichat.net.view.ClearEditText
+                    android:id="@+id/editText_yzm_register_img"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入图形码"
+                    android:maxLength="4"
+                    android:paddingRight="@dimen/dp10"
+                    android:textColor="@color/black_new_two"
+                    android:textColorHint="@color/normal_gray"
+                    android:textSize="@dimen/sp15"/>
+
+                <Button
+                    android:id="@+id/button_gain_yzm_register_img"
+                    android:layout_width="70dp"
+                    android:layout_height="@dimen/dp26"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/shape_button_register"
+                    android:text="获取图形码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/simple_yzm_register_img"
+                    android:layout_width="@dimen/dp90"
+                    android:layout_height="@dimen/dp24"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    fresco:failureImage="@mipmap/icon_refresh_upload"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:progressBarAutoRotateInterval="2000"
+                    fresco:progressBarImage="@mipmap/icon_msg_sending"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:background="@color/line_grayD9"/>
+
+            <LinearLayout
+                android:id="@+id/lin_yzm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.merrichat.net.view.ClearEditText
+                        android:id="@+id/editText_yzm_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_toLeftOf="@+id/btn_yzm"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:paddingRight="@dimen/dp10"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:textColor="@color/normal_black"
+                        android:textColorHint="@color/normal_gray"
+                        android:textSize="@dimen/sp15"/>
+
+                    <Button
+                        android:id="@+id/btn_yzm"
+                        android:layout_width="@dimen/dp70"
+                        android:layout_height="@dimen/dp26"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_button_yzm"
+                        android:text="获取"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp12"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/line_grayD9"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.merrichat.net.view.ClearEditText
+                        android:id="@+id/editText_pwd_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_toLeftOf="@+id/checkbox_register"
+                        android:background="@null"
+                        android:hint="请输入密码"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="@color/normal_black"
+                        android:textColorHint="@color/normal_gray"
+                        android:textSize="@dimen/sp15"/>
+
+                    <CheckBox
+                        android:id="@+id/checkbox_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:paddingRight="@dimen/dp2"
+                        android:button="@drawable/checkbox_login_selector"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp0.5"
+                    android:background="@color/line_grayD9"/>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp35"
+                    android:background="@drawable/shape_button_login"
+                    android:text="注册领讯美币"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_marginRight="@dimen/dp2"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp40"
+            android:text="请按提示完成连接获取短信验证码"
+            android:textColor="@color/blue_0050FF"
+            android:textSize="@dimen/sp13"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/weChat_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/dp50"
+        android:src="@mipmap/wechat"/>
+
+</RelativeLayout>

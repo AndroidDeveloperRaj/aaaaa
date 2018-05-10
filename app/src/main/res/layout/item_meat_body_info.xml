@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/radius_gray_border_normal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/meat_ico"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/meat_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meat_ico">
+
+            <TextView
+                android:id="@+id/meat_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="李闻达"
+                android:textColor="#222222"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/meat_far"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="2.1km"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/meat_constellation"
+                android:layout_width="@dimen/dp44"
+                android:layout_height="@dimen/dp16"
+                android:layout_below="@+id/meat_name"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/radius_popu_normal"
+                android:gravity="center"
+                android:text="李闻达"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/meat_years"
+                android:layout_width="@dimen/dp38"
+                android:layout_height="@dimen/dp16"
+                android:layout_below="@+id/meat_name"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_toRightOf="@+id/meat_constellation"
+                android:background="@drawable/radius_orange_normal"
+                android:gravity="center"
+                android:text="22"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0.5"
+                android:layout_below="@+id/meat_constellation"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="#d6d7dc" />
+
+
+            <TextView
+                android:id="@+id/meat_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/meat_constellation"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp21"
+                android:text="欢迎一起聊天，我是京东CEO"
+                android:textColor="#88888888"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

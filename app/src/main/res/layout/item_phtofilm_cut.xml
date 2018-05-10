@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_photofilmlvjing_cut"
+    android:layout_width="@dimen/dp50"
+    android:layout_height="@dimen/dp55"
+    android:background="@color/F3F3F3"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:layout_marginBottom="@dimen/dp10"
+        android:id="@+id/iv_photofilm_cut_icon"
+        android:layout_width="@dimen/dp18"
+        android:layout_height="@dimen/dp18"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_photofilm_lvjing_wu" />
+
+    <TextView
+        android:id="@+id/tv_photofilm_cut_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="撤销"
+        android:textColor="@drawable/selector_photofilm_lvjing_wu"
+        android:textSize="@dimen/dp10" />
+
+
+</LinearLayout>

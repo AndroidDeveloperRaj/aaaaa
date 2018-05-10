@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simple_header"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_margin="@dimen/dp10"
+            fresco:placeholderImage="@mipmap/ic_preloading"
+            fresco:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/simple_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="群名称"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15"/>
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保证金1000讯美币,关闭交易功能自动退还"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp13"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp70"
+            android:background="@color/line_grayD9"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/normal_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="收货人联系电话"
+                android:maxLength="11"
+                android:phoneNumber="true"
+                android:textColor="@color/normal_black"
+                android:textColorHint="#9E9FAB"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <View style="@style/line_width_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="联系人"
+                android:textColor="@color/normal_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="您的姓名"
+                android:maxLength="16"
+                android:textColor="@color/normal_black"
+                android:textColorHint="#9E9FAB"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+
+        <View style="@style/line_width_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="所属区县"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/editText_county"
+                android:layout_width="272dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/xiayiceng_button_tongyong2x"
+                android:gravity="center_vertical"
+                android:hint="选择所属区县"
+                android:textColor="@color/normal_black"
+                android:textColorHint="#9E9FAB"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+
+        <View style="@style/line_width_left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp110"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp18">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="详细地址"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15" />
+
+            <EditText
+                android:id="@+id/editText_detail_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入门牌号详细地址"
+                android:lineSpacingExtra="@dimen/dp5"
+                android:textColor="@color/normal_black"
+                android:textColorHint="#9E9FAB"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

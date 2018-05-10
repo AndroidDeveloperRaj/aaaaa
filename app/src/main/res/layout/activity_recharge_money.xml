@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="讯美币余额"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_mei_bi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/FF3D6F"
+                        android:textSize="@dimen/dp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@mipmap/meibi_2x" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="请选择充值金额"
+                android:textColor="@color/normal_red"
+                android:textSize="@dimen/dp13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_money_ten"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥30(30讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_money_twenty"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥50(50讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_money_thirty"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥98(98讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_money_sixty"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥298(298讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_money_hundred"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥488(488讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_money_two_hundred"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥998(998讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_money_three_hundred"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥4998(4998讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_money_five_hundred"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥6498(6498讯美币)"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="请选择充值方式"
+                android:textColor="@color/normal_red"
+                android:textSize="@dimen/dp13" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_alipay"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/chongzhi_zhifubao_2x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp4"
+                        android:text="支付宝"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wechat"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_recharge_no"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/chongzhi_weixin_2x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp4"
+                        android:text="微信"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp15" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_balance_recharge"
+                android:layout_width="@dimen/dp215"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_recharge_no"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="余额充值(可用￥0.00)"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_immediately_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@drawable/shape_onclick"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_chong_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即充值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

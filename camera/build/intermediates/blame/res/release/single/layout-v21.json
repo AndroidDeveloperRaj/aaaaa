@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/5526db6b198c04f45214ecf9d4f42416c258c88e/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/5526db6b198c04f45214ecf9d4f42416c258c88e/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/5526db6b198c04f45214ecf9d4f42416c258c88e/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/5526db6b198c04f45214ecf9d4f42416c258c88e/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

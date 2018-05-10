@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glview_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/tv_sou_suo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="@dimen/dp30" />
+
+        <TextView
+            android:id="@+id/tv_qie_huan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_sou_suo"
+            android:layout_marginLeft="@dimen/dp50"
+            android:text="切换"
+            android:textSize="@dimen/dp30" />
+
+        <TextView
+            android:id="@+id/tv_gua_duan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_qie_huan"
+            android:layout_marginLeft="@dimen/dp50"
+            android:text="挂断"
+            android:textSize="@dimen/dp30" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@drawable/shape_nice_meet"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp3"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingTop="@dimen/dp3">
+
+                <com.merrichat.net.view.CircleImageView
+                    android:id="@+id/civ_meet_photo"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:src="@mipmap/ic_preloading" />
+
+                <TextView
+                    android:id="@+id/tv_meet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="习大大"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp20"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_close_meet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/liwu_guanbi_2x" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

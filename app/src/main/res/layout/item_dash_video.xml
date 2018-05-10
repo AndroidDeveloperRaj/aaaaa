@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/cv_photo"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        fresco:placeholderImage="@mipmap/ic_preloading"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:roundAsCircle="true"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp10"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp7"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_toRightOf="@+id/cv_photo"
+        android:text=""
+        android:textColor="@color/text_6D92EF"
+        android:textSize="@dimen/sp14"/>
+
+    <TextView
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/cv_photo"
+        android:id="@+id/tv_contant"
+        android:layout_marginLeft="@dimen/dp7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dp3"
+        android:text=""
+        android:textColor="@color/base_888888"
+        android:textSize="@dimen/sp11"/>
+
+    <View
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_below="@+id/tv_contant"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/base_E2E5E7"/>
+
+</RelativeLayout>

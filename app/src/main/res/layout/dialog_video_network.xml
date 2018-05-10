@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rel_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginRight="@dimen/dp50"
+        android:background="@drawable/shape_button_dialog">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lay_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp5"
+                android:text="温馨提示"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp5"
+                android:paddingTop="@dimen/dp20"
+                android:text="当前为非WiFi环境，是否使用流量观看视频？"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/sp15"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/gray_E2E2E2"
+                android:text="暂停播放"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15"/>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/normal_red"
+                android:text="继续观看"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

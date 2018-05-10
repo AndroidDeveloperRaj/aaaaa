@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rel_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/dialog_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/rel_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp120"
+                android:layout_marginLeft="@dimen/dp150"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/normal_red"
+                        android:textSize="@dimen/sp15"/>
+
+                    <TextView
+                        android:id="@+id/dialog_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/normal_red"
+                        android:textSize="@dimen/sp15"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_strock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="库存0件"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/sp14"/>
+
+                <TextView
+                    android:id="@+id/textView_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="选择尺码及颜色"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/sp14"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_below="@+id/lin_price"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/gray_line"/>
+
+            <com.merrichat.net.view.MyScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/dialog_ok"
+                android:layout_below="@+id/view_dialog">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="规格"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/sp14"/>
+
+                    <EditText
+                        android:id="@+id/editText_shop_sku"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:background="@null"
+                        android:hint="请用文字描述您想买商品的规格，如S码 黑色"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp14"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line"
+                        android:background="@color/gray_line"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="购买数量"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/sp14"/>
+
+                    <EditText
+                        android:id="@+id/editText_shop_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp50"
+                        android:background="@null"
+                        android:hint="输入购买数量"
+                        android:phoneNumber="true"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp14"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line"
+                        android:background="@color/gray_line"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="商品金额"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/sp14"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="@color/normal_red"
+                            android:textSize="@dimen/sp14"/>
+
+                        <TextView
+                            android:id="@+id/tv_shop_all_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/normal_red"
+                            android:textSize="@dimen/sp14"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line"
+                        android:background="@color/gray_line"/>
+
+                </LinearLayout>
+            </com.merrichat.net.view.MyScrollView>
+
+            <Button
+                android:id="@+id/dialog_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_alignParentBottom="true"
+                android:background="@color/normal_red"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15"/>
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/dialog_simple_draweeView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/dp15"
+            fresco:placeholderImage="@mipmap/load"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="@dimen/dp5"
+            fresco:roundingBorderColor="@color/normal_red"
+            fresco:roundingBorderWidth="4px"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

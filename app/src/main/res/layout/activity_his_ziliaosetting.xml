@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <TextView
+        android:id="@+id/tv_jubao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:text="举报" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_nosee_mine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:text="不让他看我的朋友圈" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_nosee_mine"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswThumbDrawable="@drawable/ios_thumb_selector"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp"
+            app:kswThumbRangeRatio="1.4" />
+
+    </RelativeLayout>
+
+    <View style="@style/line_width_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45">
+
+        <TextView
+            android:id="@+id/tv_nosee_his"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:text="不看他的朋友圈" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_nosee_his"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswThumbDrawable="@drawable/ios_thumb_selector"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp"
+            app:kswThumbRangeRatio="1.4"  />
+    </RelativeLayout>
+
+    <View style="@style/line_width_match" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        style="@style/text_ffffff_15sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp75"
+        android:background="@drawable/shape_onclick"
+        android:gravity="center"
+        android:text="删除"
+        android:visibility="gone" />
+</LinearLayout>

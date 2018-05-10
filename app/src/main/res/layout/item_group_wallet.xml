@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simple_header"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_margin="@dimen/dp10"
+            fresco:placeholderImage="@mipmap/ic_preloading"
+            fresco:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/simple_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="群名称"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp70"
+            android:background="@color/line_grayD9"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@mipmap/xiayiceng_button_tongyong2x" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,655 @@
+[
+    {
+        "outputFile": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-uk/values-uk.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endLine": 7,
+                    "endColumn": 14,
+                    "endOffset": 447
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1132,
+                        "endLine": 33,
+                        "endColumn": 14,
+                        "endOffset": 1474
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 452,
+                    "endColumn": 109,
+                    "endOffset": 557
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 109,
+                        "endOffset": 210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 562,
+                    "endColumn": 101,
+                    "endOffset": 659
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 215,
+                        "endColumn": 101,
+                        "endOffset": 312
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 664,
+                    "endColumn": 105,
+                    "endOffset": 765
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 317,
+                        "endColumn": 105,
+                        "endOffset": 418
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 770,
+                    "endColumn": 85,
+                    "endOffset": 851
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 423,
+                        "endColumn": 85,
+                        "endOffset": 504
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 856,
+                    "endColumn": 107,
+                    "endOffset": 959
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 509,
+                        "endColumn": 107,
+                        "endOffset": 612
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 964,
+                    "endColumn": 117,
+                    "endOffset": 1077
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 617,
+                        "endColumn": 117,
+                        "endOffset": 730
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1082,
+                    "endColumn": 78,
+                    "endOffset": 1156
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 735,
+                        "endColumn": 78,
+                        "endOffset": 809
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1161,
+                    "endColumn": 79,
+                    "endOffset": 1236
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 814,
+                        "endColumn": 79,
+                        "endOffset": 889
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1241,
+                    "endColumn": 80,
+                    "endOffset": 1317
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 894,
+                        "endColumn": 80,
+                        "endOffset": 970
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1322,
+                    "endColumn": 105,
+                    "endOffset": 1423
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 975,
+                        "endColumn": 105,
+                        "endOffset": 1076
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1428,
+                    "endColumn": 106,
+                    "endOffset": 1530
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1081,
+                        "endColumn": 106,
+                        "endOffset": 1183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1535,
+                    "endColumn": 97,
+                    "endOffset": 1628
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1188,
+                        "endColumn": 97,
+                        "endOffset": 1281
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1633,
+                    "endColumn": 107,
+                    "endOffset": 1736
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1286,
+                        "endColumn": 107,
+                        "endOffset": 1389
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1741,
+                    "endColumn": 105,
+                    "endOffset": 1842
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1394,
+                        "endColumn": 105,
+                        "endOffset": 1495
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1847,
+                    "endColumn": 108,
+                    "endOffset": 1951
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1500,
+                        "endColumn": 108,
+                        "endOffset": 1604
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1956,
+                    "endColumn": 169,
+                    "endOffset": 2121
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1609,
+                        "endColumn": 169,
+                        "endOffset": 1774
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2126,
+                    "endColumn": 99,
+                    "endOffset": 2221
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1779,
+                        "endColumn": 99,
+                        "endOffset": 1874
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2226,
+                    "endColumn": 46,
+                    "endOffset": 2268
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 633,
+                        "endColumn": 46,
+                        "endOffset": 675
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2273,
+                    "endColumn": 58,
+                    "endOffset": 2327
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 794,
+                        "endColumn": 58,
+                        "endOffset": 848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2332,
+                    "endColumn": 60,
+                    "endOffset": 2388
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 733,
+                        "endColumn": 60,
+                        "endOffset": 789
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2393,
+                    "endColumn": 45,
+                    "endOffset": 2434
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 853,
+                        "endColumn": 45,
+                        "endOffset": 894
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2439,
+                    "endColumn": 40,
+                    "endOffset": 2475
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 998,
+                        "endColumn": 40,
+                        "endOffset": 1034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2480,
+                    "endColumn": 51,
+                    "endOffset": 2527
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 681,
+                        "endColumn": 51,
+                        "endOffset": 728
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2532,
+                    "endColumn": 44,
+                    "endOffset": 2572
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 953,
+                        "endColumn": 44,
+                        "endOffset": 993
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2577,
+                    "endColumn": 69,
+                    "endOffset": 2642
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1618,
+                        "endColumn": 69,
+                        "endOffset": 1683
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2647,
+                    "endColumn": 95,
+                    "endOffset": 2738
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1782,
+                        "endColumn": 95,
+                        "endOffset": 1873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2743,
+                    "endColumn": 91,
+                    "endOffset": 2830
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1040,
+                        "endColumn": 91,
+                        "endOffset": 1127
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2835,
+                    "endColumn": 68,
+                    "endOffset": 2899
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1549,
+                        "endColumn": 68,
+                        "endOffset": 1613
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2904,
+                    "endColumn": 93,
+                    "endOffset": 2993
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1688,
+                        "endColumn": 93,
+                        "endOffset": 1777
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2998,
+                    "endColumn": 69,
+                    "endOffset": 3063
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1479,
+                        "endColumn": 69,
+                        "endOffset": 1544
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 3068,
+                    "endColumn": 53,
+                    "endOffset": 3117
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/src/main/res/values-uk/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 899,
+                        "endColumn": 53,
+                        "endOffset": 948
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 3122,
+                    "endColumn": 80,
+                    "endOffset": 3198
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1879,
+                        "endColumn": 80,
+                        "endOffset": 1955
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3203,
+                    "endColumn": 100,
+                    "endOffset": 3299
+                },
+                "from": {
+                    "file": "/Users/chenjingjing/.android/build-cache/5526db6b198c04f45214ecf9d4f42416c258c88e/output/res/values-uk/values-uk.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 100,
+                        "endOffset": 151
+                    }
+                }
+            }
+        ]
+    }
+]

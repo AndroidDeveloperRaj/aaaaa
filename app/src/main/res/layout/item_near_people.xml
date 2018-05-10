@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp2"
+    android:paddingRight="@dimen/dp2"
+    android:paddingTop="@dimen/dp5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_show_attention"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_near_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp5"
+                android:maxLines="2"
+                android:text="这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp12" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/dp5"
+                android:maxLines="2"
+                android:text="这是内容这是内容这是内容这是内容这是内容这是内容这是内容这是内容"
+                android:textColor="@color/base_888888"
+                android:textSize="@dimen/dp12" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10">
+
+            <com.merrichat.net.view.CircleImageView
+                android:id="@+id/cv_friends_photo"
+                android:layout_width="@dimen/dp27"
+                android:layout_height="@dimen/dp27"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_preloading" />
+
+            <TextView
+                android:id="@+id/tv_near_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_toLeftOf="@+id/ll_right"
+                android:layout_toRightOf="@+id/cv_friends_photo"
+                android:text="希特勒是罪恶的"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp11" />
+
+            <LinearLayout
+                android:id="@+id/ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/fenxiang_dingwei_2x" />
+
+                <TextView
+                    android:id="@+id/tv_ju_li"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp4"
+                    android:text="11.1KM"
+                    android:textColor="@color/base_9E9FAB"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

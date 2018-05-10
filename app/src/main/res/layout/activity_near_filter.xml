@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/shape_show_attention"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_girls"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp110"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@mipmap/shaixuan_nv_2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="女生"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <com.merrichat.net.view.MyCheckBox
+                    android:id="@+id/mb_girls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:button="@drawable/selector_shaixuan"
+                    android:checked="false"
+                    android:enabled="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/base_E2E5E7" />
+
+        <LinearLayout
+            android:id="@+id/ll_boys"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp110"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@mipmap/shaixuan_nan_2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="男生"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <com.merrichat.net.view.MyCheckBox
+                    android:id="@+id/mb_boys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:button="@drawable/selector_shaixuan"
+                    android:checked="false"
+                    android:enabled="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/base_E2E5E7" />
+
+        <LinearLayout
+            android:id="@+id/ll_nan_shen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp110"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@mipmap/shaixuan_nv_2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="男神"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <com.merrichat.net.view.MyCheckBox
+                    android:id="@+id/mb_nan_shen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:button="@drawable/selector_shaixuan"
+                    android:checked="false"
+                    android:enabled="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/base_E2E5E7" />
+
+        <LinearLayout
+            android:id="@+id/ll_nv_shen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp110"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:background="@mipmap/shaixuan_nv_2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="女神"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <com.merrichat.net.view.MyCheckBox
+                    android:id="@+id/mb_nv_shen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:button="@drawable/selector_shaixuan"
+                    android:checked="false"
+                    android:enabled="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/base_E2E5E7" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30" />
+    </LinearLayout>
+
+
+</LinearLayout>

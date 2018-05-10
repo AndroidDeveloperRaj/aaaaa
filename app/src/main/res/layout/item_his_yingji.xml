@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.merrichat.net.view.RoundAngleFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    fresco:radius="@dimen/dp2">
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simple_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#BBBBBB"
+            android:scaleType="centerInside"
+            fresco:failureImageScaleType="centerInside" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_circle_video_detail"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp7"
+                android:paddingTop="@dimen/dp10"
+                android:text="我的朋友圈，真的全是人才"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp11"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp7"
+                android:paddingRight="@dimen/dp7">
+
+                <com.merrichat.net.view.DrawableCenterTextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:drawableLeft="@mipmap/fujin_dongtai_2x"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp11"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/simple_header"
+                        android:layout_width="@dimen/dp17"
+                        android:layout_height="@dimen/dp17"
+                        android:visibility="gone"
+                        fresco:failureImageScaleType="centerInside"
+                        fresco:placeholderImage="@mipmap/icon_logo"
+                        fresco:roundAsCircle="true"
+                        fresco:roundingBorderColor="#FFA6BE"
+                        fresco:roundingBorderWidth="@dimen/dp0.5" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="@dimen/dp7"
+                        android:text="name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp10"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp30"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/wode_jiangli" />
+
+                        <TextView
+                            android:id="@+id/tv_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:text="99"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp11" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_check_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_marginLeft="@dimen/dp7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/check_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp5" />
+
+                        <TextView
+                            android:id="@+id/tv_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:text="99"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp11" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.merrichat.net.view.RoundAngleFrameLayout>

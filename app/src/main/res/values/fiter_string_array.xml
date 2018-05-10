@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fiter_chinese">
+        <item>自然</item>
+        <item>三角洲</item>
+        <item>兴奋</item>
+        <item>SLOWLIVED</item>
+        <item>日系</item>
+
+        <item>温暖</item>
+        <item>白阶</item>
+        <item>宝丽来</item>
+        <item>赤红</item>
+        <item>富士</item>
+
+        <item>干燥</item>
+        <item>混凝土</item>
+        <item>柯达</item>
+        <item>禄来</item>
+        <item>青</item>
+
+        <item>秋色</item>
+        <item>阳光</item>
+        <item>珍珠</item>
+        <item>阿宝色</item>
+        <item>白露</item>
+
+        <item>初美</item>
+        <item>粉嫩</item>
+        <item>高动态范围</item>
+        <item>黑白</item>
+        <item>冷调</item>
+
+        <item>暖茶</item>
+        <item>清凉</item>
+        <item>日系人像</item>
+        <item>银色</item>
+        <item>甜美</item>
+
+        <item>忘忧森林</item>
+        <item>樱空</item>
+        <item>香港</item>
+        <item>云</item>
+        <item>海滨小道</item>
+
+        <item>克鲁兹</item>
+        <item>青柠</item>
+        <item>幸运</item>
+        　　
+    </string-array>
+
+    <string-array name="fiter_english">
+
+        <item>nature</item>
+        <item>delta</item>
+        <item>electric</item>
+        <item>slowlived</item>
+        <item>tokyo</item>
+
+        <item>warm</item>
+        <item>white level</item>
+        <item>polaroid</item>
+        <item>crimson</item>
+        <item>fuji</item>
+
+        <item>dry</item>
+        <item>concrete</item>
+        <item>kodak</item>
+        <item>rollei</item>
+        <item>cyan</item>
+
+        <item>autumn</item>
+        <item>sunshine</item>
+        <item>pearl</item>
+        <item>abao</item>
+        <item>dew</item>
+
+        <item>girly</item>
+        <item>pink</item>
+        <item>HDR</item>
+        <item>blackwhite</item>
+        <item>cold</item>
+
+        <item>red tea</item>
+        <item>refreshing</item>
+        <item>japanese</item>
+        <item>silver</item>
+        <item>sweet</item>
+
+        <item>forest</item>
+        <item>sakura</item>
+        <item>hongkong</item>
+        <item>cloud</item>
+        <item>boardwalk</item>
+        
+        <item>cruz</item>
+        <item>keylime</item>
+        <item>lucky</item>
+    </string-array>
+    　　
+
+
+
+</resources>

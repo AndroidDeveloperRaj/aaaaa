@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_new">
+
+
+    <com.merrichat.net.view.universalvideoview.UniversalVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:uvv_autoRotation="false"
+        app:uvv_fitXY="false" />
+
+    <com.merrichat.net.view.universalvideoview.UniversalMediaController
+        android:id="@+id/media_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:uvv_scalable="false" />
+
+    <ImageView
+        android:id="@+id/video_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:src="@mipmap/shipin_button_zanting_small_2x"
+        android:visibility="gone"/>
+</FrameLayout>

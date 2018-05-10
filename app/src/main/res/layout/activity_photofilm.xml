@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_linear"
+        android:layout_below="@+id/ic_title"
+        android:gravity="center">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/iv_pictureShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_pics_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/dp20"
+            android:visibility="gone"
+            android:id="@+id/rl_edit_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingTop="@dimen/dp15">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_photofilmtab_moban"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmtab_moban" />
+
+                <TextView
+                    android:id="@+id/tv_photofilm_moban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="模板"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_music"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmtab_yinyue"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="音乐"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_lvjing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmtab_lvjing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="滤镜"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_cut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmtab_cut" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="剪裁"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@mipmap/zhaopian_gengduo3x" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="更多"
+                    android:textColor="@color/text_525252"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

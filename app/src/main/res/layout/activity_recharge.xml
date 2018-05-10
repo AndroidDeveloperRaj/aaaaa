@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_withdrawal_method"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:background="@color/white_2">
+
+            <TextView
+                android:id="@+id/textView_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp25"
+                android:text="提现方式"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/tv_withdrawal_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_toRightOf="@+id/textView_recharge"
+                android:text=""
+                android:textColor="@color/base_093FFF"
+                android:textSize="@dimen/sp15" />
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@mipmap/xiayiceng_button_tongyong2x" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp25"
+            android:text="提现金额"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/sp15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp30"
+                android:text="￥"
+                android:textColor="@color/black_new_two"
+                android:textSize="40sp" />
+
+            <EditText
+                android:id="@+id/editText_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:paddingLeft="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textCursorDrawable="@null"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@color/line_grayD9" />
+
+        <LinearLayout
+            android:id="@+id/lay_money1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp25"
+                android:text="钱包可提现余额:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/tv_wallet_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="￥0.00"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_money2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp25"
+                android:text="实际到账:"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/tv_money_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="￥0.00"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp25"
+                android:text="额外扣除"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:id="@+id/tv_money_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="￥0.00"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="手续费"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp25"
+            android:background="@drawable/shape_onclick"
+            android:text="提现"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:text="每7天只能申请一次提现"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:gravity="center"
+            android:text="3个工作日内到账"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30" />
+    </LinearLayout>
+
+</LinearLayout>

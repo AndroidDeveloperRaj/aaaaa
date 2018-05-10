@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_tp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_cp_top" />
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/normal_d7"
+        android:textSize="@dimen/dp80" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp90">
+
+        <ImageView
+            android:id="@+id/iv_tp_take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_tp_take" />
+
+        <ImageView
+            android:id="@+id/iv_tp_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:src="@mipmap/icon_tp_complete" />
+    </RelativeLayout>
+</FrameLayout>

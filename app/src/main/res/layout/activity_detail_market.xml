@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_title"/>
+
+    <com.merrichat.net.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_market_bottom"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_detail_top"/>
+
+            <include layout="@layout/activity_market_sku"/>
+
+            <include layout="@layout/activity_market_pintuan"/>
+
+            <include layout="@layout/activity_market_detail_image"/>
+        </LinearLayout>
+    </com.merrichat.net.view.MyScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_market_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_market_ke_fu"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/haowukefu"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系卖家"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lin_market_tuan"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shap_detail_bottom_background_right"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_character"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/sp11"/>
+
+                    <TextView
+                        android:id="@+id/tv_market_price_tuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="0.00"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/sp15"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拼团购买"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/sp12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_market_buy"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shap_detail_bottom_background_left"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_character"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp11"/>
+
+                    <TextView
+                        android:id="@+id/tv_market_price_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp15"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直接购买"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_E2E2E2"
+                android:gravity="center"
+                android:text="已售罄"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sold_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap_detail_bottom_background_left"
+            android:gravity="center"
+            android:text="下架商品"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_sold_out_true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shap_detail_bottom_background_left"
+            android:gravity="center"
+            android:text="商品已下架"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ic_title"
+        layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_linear"
+        android:layout_below="@+id/ic_title"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_pictureShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_photofilm_pic"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp70"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@drawable/photofilm_item_square_selected"
+                android:padding="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp8"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_photofilmmore_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/rl_pics_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/rl_edit_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingTop="@dimen/dp15">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_photofilmtab_moban"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmmore_tiezhi" />
+
+                <TextView
+                    android:id="@+id/tv_photofilm_moban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="贴纸"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_photofilmtab_music"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmmore_zimu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="字幕"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_lvjing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmmore_volume" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="音量"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_cut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmmore_move" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="动作"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_photofilmtab_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:background="@drawable/selector_photofilmmore_cover" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dp3"
+                    android:text="封面"
+                    android:textColor="@drawable/selector_photofilmtab_moban"
+                    android:textSize="@dimen/dp11" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_month"
+            style="@style/text_222222_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="2017年11月奖励记录" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/iv_nanshen_confirm"
+            android:paddingRight="@dimen/dp10">
+
+
+            <TextView
+                android:id="@+id/tv_money_num"
+                style="@style/text_ff3d6f_15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="12.00" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_nanshen_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp10"
+            android:src="@mipmap/xiayiceng_button_tongyong2x" />
+    </RelativeLayout>
+    <View style="@style/line_width_left" />
+</LinearLayout>

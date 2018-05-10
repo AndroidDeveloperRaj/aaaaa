@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_evaluate_hover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rel_evaluate_hover"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10">
+
+            <View
+                android:id="@+id/view_hover"
+                android:layout_width="@dimen/dp2"
+                android:layout_height="@dimen/dp13"
+                android:layout_centerVertical="true"
+                android:background="@color/normal_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_toRightOf="@+id/view_hover"
+                android:text="秀吧评论"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/sp13" />
+
+            <TextView
+                android:id="@+id/tv_comment_hover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView_next_hover"
+                android:text="共0条评论"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp11" />
+
+            <ImageView
+                android:id="@+id/imageView_next_hover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/xiayicengjixiaohui_2x" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.merrichat.net.view.ObservableScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_video_view"/>
+
+            <include layout="@layout/layout_video_bottom" />
+        </LinearLayout>
+    </com.merrichat.net.view.ObservableScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lay_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white_2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shape_input"
+            android:hint="评论才是最真实的哦~"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black_new_two"
+            android:textColorHint="@color/base_888888"
+            android:textSize="14dp" />
+    </LinearLayout>
+</LinearLayout>

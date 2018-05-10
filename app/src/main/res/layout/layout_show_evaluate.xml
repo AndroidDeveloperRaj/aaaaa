@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/dp2"
+            android:layout_height="@dimen/dp13"
+            android:layout_centerVertical="true"
+            android:background="@color/normal_red" />
+
+        <TextView
+            android:id="@+id/tv_evaluate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_toRightOf="@+id/view"
+            android:text="动态评论"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/sp13" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView_next"
+            android:text="共0条评论"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp11" />
+
+        <ImageView
+            android:id="@+id/imageView_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@mipmap/xiayicengjixiaohui_2x" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp10"
+        android:background="@color/base_E2E5E7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp65"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/show_evaluate_header"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:layout_marginLeft="@dimen/dp10"
+            fresco:placeholderImage="@mipmap/ic_preloading"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true">
+
+        </com.facebook.drawee.view.SimpleDraweeView>
+
+        <TextView
+            android:id="@+id/show_evaluate_textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/shape_button_show_evaluate"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:text="评论才是最真实的哦～"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_detail_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

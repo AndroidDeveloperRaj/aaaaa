@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+
+        style="@style/text_888888_15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp48"
+        android:text="我的金币(余额)" />
+
+    <TextView
+        android:id="@+id/tv_work_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:text="0"
+        android:textColor="@color/black_new_two"
+        android:textSize="@dimen/sp28"
+        android:textStyle="bold" />
+
+    <TextView
+
+        style="@style/text_888888_15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp48"
+        android:text="可领工资" />
+
+    <TextView
+        android:id="@+id/tv_mei_bi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp25"
+        android:text="0 元"
+        android:textColor="@color/black_new_two"
+        android:textSize="@dimen/sp28"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_get_paid"
+        style="@style/text_ffffff_15sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp100"
+        android:background="@drawable/shape_onclick"
+        android:gravity="center"
+        android:text="领工资" />
+
+    <TextView
+        android:id="@+id/tv_zan_num"
+        style="@style/text_888888_15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:text="最近7天获得点赞数:123"
+        android:visibility="gone" />
+</LinearLayout>

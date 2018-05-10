@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_title" />
+
+        <EditText
+            android:id="@+id/et_label"
+            style="@style/text_222222_15sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:hint="手动添加标签（20字）"
+            android:paddingLeft="@dimen/dp10"
+            android:textColorHint="@color/base_9E9FAB"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/text_888888_13sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:text="请选择标签类，可多选（3个）" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_receclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        style="@style/text_ffffff_15sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/normal_red"
+        android:gravity="center"
+        android:text="确定" />
+</RelativeLayout>

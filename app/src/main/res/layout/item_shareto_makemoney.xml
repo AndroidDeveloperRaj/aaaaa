@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp65"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/cv_header"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_centerVertical="true"
+            app:placeholderImage="@mipmap/ic_preloading"
+            app:roundAsCircle="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/cv_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/sb_add_friend"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/text_222222_15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张晓丽" />
+
+                    <TextView
+                        android:id="@+id/tv_invit_way"
+                        style="@style/text_ffffff_11sp"
+                        android:layout_width="@dimen/dp35"
+                        android:layout_height="@dimen/dp15"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@drawable/shape_meiyou_jianjie_text"
+                        android:gravity="center"
+                        android:text="一代" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_inviter_name"
+                    style="@style/text_888888_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="邀请人:二货" />
+
+
+            </LinearLayout>
+
+            <com.merrichat.net.view.StateButton
+                android:id="@+id/sb_add_friend"
+                android:layout_width="@dimen/dp65"
+                android:layout_height="@dimen/dp25"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="加好友"
+                android:textSize="@dimen/sp12"
+                android:visibility="gone"
+                app:normalBackgroundColor="@color/FF3D6F"
+                app:normalTextColor="@color/white"
+                app:pressedBackgroundColor="@color/FF3D5F"
+                app:pressedTextColor="@color/white"
+                app:statebutton_radius="@dimen/dp2" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/text_888888_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:visibility="gone" />
+
+            <View
+                style="@style/line_width_match"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

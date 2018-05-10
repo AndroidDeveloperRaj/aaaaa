@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gif_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#bb000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="喜欢就送一个礼物吧"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_gift_close"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/vl_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/white" />
+
+    <com.merrichat.net.activity.meiyu.fragments.view.MyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="72dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <!--<RadioButton-->
+        <!--android:layout_width="5dp"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="@drawable/bg_radio" />-->
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/vl_line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_coin"
+            android:layout_width="@dimen/dp21"
+            android:layout_height="@dimen/dp21"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:background="@mipmap/meibi_2x" />
+
+        <TextView
+            android:id="@+id/coin_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/iv_coin"
+            android:text="讯美币:0.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:id="@+id/tv_chongzhi"
+            android:layout_width="@dimen/dp37"
+            android:layout_height="@dimen/dp18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/coin_count"
+            android:background="@drawable/shape_button_video_music"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp12" />
+
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/bg_round_orange"
+            android:gravity="center"
+            android:text="赠送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

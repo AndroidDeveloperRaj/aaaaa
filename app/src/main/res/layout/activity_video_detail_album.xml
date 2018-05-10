@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_three">
+
+        <!--<com.merrichat.net.view.OnScrollScrollView-->
+            <!--android:id="@+id/sv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/rel_video_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp220"
+                    android:background="#4A4A4A">
+
+                    <com.merrichat.net.view.universalvideoview.SmallVideoView
+                        android:id="@+id/videoView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:uvv_autoRotation="false"
+                        app:uvv_fitXY="false"/>
+
+                    <com.merrichat.net.view.universalvideoview.SmallMediaController
+                        android:id="@+id/media_controller"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:uvv_scalable="false"/>
+
+                    <ImageView
+                        android:id="@+id/image_cover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/video_player"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/shipin_button_zanting_small_2x"
+                        android:visibility="gone"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_toast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_toast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前为数据流量,继续播放将消耗流量"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_toast"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_play"
+                                android:layout_width="@dimen/dp80"
+                                android:layout_height="@dimen/dp30"
+                                android:background="@drawable/shape_white_1"
+                                android:text="继续播放"
+                                android:textColor="@color/white"/>
+
+                            <Button
+                                android:id="@+id/btn_other"
+                                android:layout_width="@dimen/dp80"
+                                android:layout_height="@dimen/dp30"
+                                android:layout_marginLeft="@dimen/dp15"
+                                android:background="@drawable/shape_red_1"
+                                android:text="分享好友"
+                                android:textColor="@color/normal_red"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <!--音乐 赞无-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/dp10"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        android:background="@drawable/shape_button_show_evaluate"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp44"
+                            android:layout_height="@dimen/dp44"
+                            android:scaleType="center"
+                            android:src="@mipmap/icon_left_play_voice_1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="音乐："
+                            android:textColor="@color/black_new_two"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="妈妈的歌谣-吴京"
+                            android:textColor="@color/black_new_two"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/layout_show_des"/>
+
+                <LinearLayout
+                    android:id="@+id/lin_show_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/white">
+
+                    <include layout="@layout/layout_show_select"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin_show_dash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/white">
+
+                    <include layout="@layout/layout_show_dash"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/white">
+
+                    <include layout="@layout/layout_show_evaluate"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/white">
+
+                    <include layout="@layout/layout_show_about"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_new_two">
+
+        <com.merrichat.net.view.DrawableCenterTextView
+            android:id="@+id/tv_income"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/wode_jiangli_limian"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <com.merrichat.net.view.DrawableCenterTextView
+            android:id="@+id/tv_dianzan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_dianzan"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <com.merrichat.net.view.DrawableCenterTextView
+            android:id="@+id/tv_pinglun"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_pinglun"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <com.merrichat.net.view.DrawableCenterTextView
+            android:visibility="gone"
+            android:id="@+id/tv_fenxiang"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/tuwen_fenxiang_2x"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@+id/tv_status"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_white"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@id/tv_status"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="10"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/iv_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_status"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:src="@mipmap/icon_menu_white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

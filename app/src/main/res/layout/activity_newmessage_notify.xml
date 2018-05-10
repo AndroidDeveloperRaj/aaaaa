@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:text="接收新消息通知"
+            android:textColor="@drawable/selector_homesetting_text"
+            android:textSize="@dimen/dp15" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_checked_message"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswThumbDrawable="@drawable/ios_thumb_selector"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp"
+            app:kswThumbRangeRatio="1.4" />
+
+
+    </RelativeLayout>
+
+
+    <View style="@style/line_width_left" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shipin_yuyin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64">
+
+        <TextView
+            android:id="@+id/tv_shipin_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:text="接受陌生视频电话"
+            android:textColor="@drawable/selector_homesetting_text"
+            android:textSize="@dimen/dp15" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_checked_shipin"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswThumbDrawable="@drawable/ios_thumb_selector"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp"
+            app:kswThumbRangeRatio="1.4" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/line_width_left" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:text="视频电话、语音电话设置"
+        android:textColor="@color/FF3D6F"
+        android:textSize="@dimen/dp15" />
+
+    <View style="@style/line_width_left" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_receclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

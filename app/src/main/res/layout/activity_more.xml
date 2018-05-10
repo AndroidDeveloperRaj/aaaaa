@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white">
+
+    <LinearLayout
+        android:layout_above="@+id/lin_function"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/activity_title_text"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/imageView_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+            <com.merrichat.net.view.CircularProgressView
+                android:id="@+id/progressView"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_centerInParent="true"
+                fresco:borderWidth="@dimen/dp2"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/special_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp115"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp115"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_volume"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp115"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原声"
+                    android:textColor="@color/text_525252"
+                    android:textSize="@dimen/sp15"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/dp2"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/seekbar_background"
+                    android:thumb="@mipmap/seekbar_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配乐"
+                    android:textColor="@color/text_525252"
+                    android:textSize="@dimen/sp15"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/dp2"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/seekbar_background"
+                    android:thumb="@mipmap/seekbar_1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_cover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp115"
+            android:paddingTop="@dimen/dp40"
+            android:paddingBottom="@dimen/dp35"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp25"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/special_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/radio_sticker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_sticker_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="贴纸"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/radio_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_subtitle_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="字幕"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_volume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_volume_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="音量"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_cover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_cover_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="封面"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:button="@null"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="11dp"/>
+    </RadioGroup>
+</RelativeLayout>

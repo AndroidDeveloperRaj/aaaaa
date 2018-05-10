@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tuwen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dp10"
+        android:text=""
+        android:textColor="@color/black_new_two"
+        android:textSize="@dimen/dp18"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp17"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp67">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/show_header"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            fresco:placeholderImage="@mipmap/ic_preloading"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/show_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/sp14" />
+
+
+            <TextView
+                android:id="@+id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp11"
+                android:layout_marginTop="@dimen/dp3"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_re_select"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/selector_addorcancle_attention"
+            android:gravity="center"
+            android:textColor="@drawable/selector_addorcancle_attention_text"
+            android:text="+ 关注"
+            android:textSize="@dimen/sp12" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/shape_button_shipin_qian"
+        android:layout_marginLeft="@dimen/dp10"
+        android:paddingLeft="@dimen/dp5"
+        android:paddingRight="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp10">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shipin_qian_xiao"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#80B0B0B0"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11"
+            android:translationZ="10dp"
+            android:layout_marginLeft="@dimen/dp3"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@color/base_E2E5E7"
+        android:layout_marginRight="@dimen/dp10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/tv_show_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp18"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp10"
+            android:lineSpacingMultiplier="1.5"/>
+
+        <TextView
+            android:id="@+id/tv_show_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text=""
+            android:lineSpacingMultiplier="1.5"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/sp14"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/show_content_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text=""
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</LinearLayout>

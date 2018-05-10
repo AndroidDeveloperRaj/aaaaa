@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/cv_show_photo"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:background="@mipmap/ic_preloading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:text="王思聪"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:text="在线"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/dp12" />
+    </LinearLayout>
+
+</LinearLayout>

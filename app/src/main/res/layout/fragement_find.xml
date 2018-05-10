@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp18" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_un_login" />
+
+    <LinearLayout
+        android:id="@+id/ll_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/ll_nice_meet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:drawableLeft="@mipmap/meiyu"
+                android:drawablePadding="@dimen/dp10"
+                android:text="美遇"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+
+        <View style="@style/line_width_left" />
+
+        <RelativeLayout
+            android:id="@+id/ll_near_group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:drawableLeft="@mipmap/fujindequn"
+                android:drawablePadding="@dimen/dp10"
+                android:text="附近的群"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+
+        <View style="@style/line_width_left" />
+
+        <RelativeLayout
+            android:id="@+id/ll_mining_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:drawableLeft="@mipmap/bangdan"
+                android:drawablePadding="@dimen/dp10"
+                android:text="榜单"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/xiayiceng_button_tongyong2x" />
+
+        </RelativeLayout>
+
+        <View style="@style/line_width_left" />
+
+        <RelativeLayout
+            android:id="@+id/ll_share_for_money"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:drawableLeft="@mipmap/yaoqing_zhuanqian"
+                android:drawablePadding="@dimen/dp10"
+                android:text="邀请赚"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/xiayiceng_button_tongyong2x" />
+
+        </RelativeLayout>
+
+        <View style="@style/line_width_left" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

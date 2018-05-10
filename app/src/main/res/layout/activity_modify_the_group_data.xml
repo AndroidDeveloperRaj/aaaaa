@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_group_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp106">
+
+            <com.merrichat.net.view.CircleImageView
+                android:id="@+id/civ_group_photo"
+                android:layout_width="@dimen/dp76"
+                android:layout_height="@dimen/dp76"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@mipmap/ic_preloading" />
+
+            <TextView
+                android:id="@+id/tv_group_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_toLeftOf="@+id/iv_group_logo"
+                android:layout_toRightOf="@+id/civ_group_photo"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp22" />
+
+            <ImageView
+                android:id="@+id/iv_group_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64">
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_tv_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_group_locations"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64">
+
+            <TextView
+                android:id="@+id/tv_tv_group_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_group_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_group_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64">
+
+            <TextView
+                android:id="@+id/tv_group_announcement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_group_announcement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp64"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_group_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text="实物交易群佣金比例"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_shiwu_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:textColor="@color/normal_red"
+                    android:textSize="@dimen/dp15" />
+
+            </LinearLayout>
+
+            <View style="@style/line_width_left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text="虚拟交易群佣金比例"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <TextView
+                    android:id="@+id/tv_xuni_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:textColor="@color/normal_red"
+                    android:textSize="@dimen/dp15" />
+
+            </LinearLayout>
+
+            <View style="@style/line_width_left" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

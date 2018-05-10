@@ -1,0 +1,98 @@
+package com.merrichat.net.weidget;
+
+import android.content.Context;
+import android.support.v4.view.ViewConfigurationCompat;
+import android.support.v4.view.ViewPager;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.ViewConfiguration;
+
+/**
+ * Created by wwangweiwei on 18/1/20.
+ */
+
+public class HomeViewPager extends ViewPager {
+    //是否禁止左右滑动
+    private boolean disableScroll = false;
+
+    public HomeViewPager(Context context) {
+        super(context);
+        init();
+    }
+
+    public HomeViewPager(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        if (getCurrentItem() == 0) {
+            float x = ev.getX();
+            float y = ev.getY();
+            switch (ev.getAction()) {
+                case MotionEvent.ACTION_MOVE:
+                    float xDiff = Math.abs(x - mLastY);
+                    float yDiff = Math.abs(y - mLastY);
+                    //在第一页，判断到是向左边滑动，即想滑动第二页
+                    if (xDiff > 0 && x - mLastX < 0 && xDiff * 0.5f > yDiff) {
+                        //告诉父容器不要拦截事件
+                        getParent().requestDisallowInterceptTouchEvent(true);
+                    } else if (yDiff > mTouchSlop && xDiff < mTouchSlop) {
+                        //竖直滑动时，告诉父容器拦截事件，用于在ScrollView中可以竖直滑动
+                        getParent().requestDisallowInterceptTouchEvent(false);
+                    }
+                    break;
+                case MotionEvent.ACTION_UP:
+                    getParent().requestDisallowInterceptTouchEvent(false);
+                    break;
+            }
+            mLastX = x;
+            mLastY = y;
+        } else {
+            getParent().requestDisallowInterceptTouchEvent(true);
+        }
+
+
+        return super.dispatchTouchEvent(ev);
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent arg0) {
+        if (disableScroll) {
+            return false;
+        }
+        return super.onInterceptTouchEvent(arg0);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent arg0) {
+        if (disableScroll)
+            return false;
+        else
+            return super.onTouchEvent(arg0);
+    }
+
+    public boolean isDisableScroll() {
+        return disableScroll;
+    }
+
+    public void setDisableScroll(boolean disableScroll) {
+        this.disableScroll = disableScroll;
+    }
+
+
+    private int mTouchSlop;
+
+
+    private void init() {
+        final Context context = getContext();
+        final ViewConfiguration configuration = ViewConfiguration.get(context);
+        mTouchSlop = ViewConfigurationCompat.getScaledPagingTouchSlop(configuration);
+    }
+
+    float mLastX;
+    float mLastY;
+
+
+}

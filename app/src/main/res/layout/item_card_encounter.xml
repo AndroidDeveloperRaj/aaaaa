@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="@dimen/dp8"
+        card_view:cardElevation="@dimen/dp3"
+        card_view:cardMaxElevation="@dimen/dp15"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp200"-->
+            <!--android:scaleType="center"-->
+            <!--android:src="@drawable/bg_girl" />-->
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                app:sriv_left_bottom_corner_radius="0dp"
+                app:sriv_left_top_corner_radius="@dimen/dp8"
+                app:sriv_right_bottom_corner_radius="0dp"
+                app:sriv_right_top_corner_radius="@dimen/dp8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp67">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:text="刘强东"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp17"
+                        android:text="2.1km"
+                        android:textColor="@color/base_888888"
+                        android:textSize="@dimen/dp13" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="@dimen/dp12"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginTop="@dimen/dp6"
+                        android:background="@color/normal_red" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@color/line_grayD9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:gravity="center_horizontal"
+                    android:text="欢迎一起聊天，我是京东CEO"
+                    android:textSize="@dimen/dp14" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/dp80"-->
+            <!--android:layout_height="@dimen/dp100"-->
+            <!--android:layout_marginTop="@dimen/dp10"-->
+            <!--android:background="@drawable/shape_conner">-->
+
+            <!--<com.joooonho.SelectableRoundedImageView-->
+            <!--android:layout_width="@dimen/dp80"-->
+            <!--android:layout_height="@dimen/dp80"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/bg_girl" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

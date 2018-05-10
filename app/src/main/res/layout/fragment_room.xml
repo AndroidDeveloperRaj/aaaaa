@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/room_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:clickable="true">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+    <com.merrichat.net.activity.video.player.gsyvideo.EmptyControlVideo
+        android:id="@+id/ijkVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/anchor_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imageView_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shiupin_zan_click_2x"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lin_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp20"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp18"
+        android:paddingRight="@dimen/dp18">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginBottom="@dimen/dp5">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sv_header"
+                android:layout_width="@dimen/dp39"
+                android:layout_height="@dimen/dp39"
+                app:placeholderImage="@mipmap/ic_preloading"
+                app:roundAsCircle="true"
+                app:roundingBorderColor="@color/white"
+                app:roundingBorderWidth="@dimen/dp1"/>
+
+            <ImageButton
+                android:id="@+id/iv_collect"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp19"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_button_shipin"
+                android:src="@mipmap/shipin_jiahao"/>
+        </RelativeLayout>
+
+        <!--<com.sackcentury.shinebuttonlib.ShineButton-->
+        <!--android:id="@+id/shb_like"-->
+        <!--android:layout_width="@dimen/dp40"-->
+        <!--android:layout_height="@dimen/dp37"-->
+        <!--android:layout_marginTop="@dimen/dp10"-->
+        <!--android:src="@mipmap/shipin_zan"-->
+        <!--app:allow_random_color="false"-->
+        <!--app:big_shine_color="#FF0042"-->
+        <!--app:btn_color="@color/white"-->
+        <!--app:btn_fill_color="#FF0042"-->
+        <!--app:click_animation_duration="200"-->
+        <!--app:enable_flashing="false"-->
+        <!--app:shine_animation_duration="1500"-->
+        <!--app:shine_count="8"-->
+        <!--app:shine_turn_angle="10"-->
+        <!--app:siShape="@mipmap/shiupin_zan_click"-->
+        <!--app:small_shine_color="#FF0042"-->
+        <!--app:small_shine_offset_angle="20"/>-->
+
+        <CheckBox
+            android:id="@+id/shb_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:button="@drawable/checkbox_video_select"/>
+
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp9"
+            android:paddingTop="@dimen/dp5"
+            android:shadowColor="#80B0B0B0"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11"/>
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@mipmap/shipin_pinglun"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp9"
+            android:paddingTop="@dimen/dp9"
+            android:shadowColor="#B0B0B0"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11"/>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@mipmap/shipin_fenxiang"/>
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp9"
+            android:paddingTop="@dimen/dp9"
+            android:shadowColor="#80B0B0B0"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="分享赚"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11"
+            android:translationZ="10dp"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@mipmap/shipin_qian"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp9"
+            android:paddingTop="@dimen/dp9"
+            android:shadowColor="#80B0B0B0"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11"
+            android:translationZ="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:src="@mipmap/tuwen_dashang"/>
+
+        <TextView
+            android:id="@+id/tv_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp5"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp9"
+            android:paddingTop="@dimen/dp9"
+            android:shadowColor="#80B0B0B0"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="打赏"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp11"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin_bottom"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp37"
+        android:layout_toLeftOf="@+id/lin_right"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/shape_button_shipin_qian"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shipin_qian_xiao"/>
+
+            <TextView
+                android:id="@+id/tv_money1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#80B0B0B0"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp11"
+                android:translationZ="10dp"
+                android:layout_marginLeft="@dimen/dp3"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/tv_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:shadowColor="#804E4E4E"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14"/>
+
+        <TextView
+            android:id="@+id/tv_video_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp15"
+            android:focusableInTouchMode="true"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:shadowColor="#804E4E4E"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="#ADADAA"/>
+
+        <TextView
+            android:id="@+id/tv_write_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:drawableLeft="@mipmap/shipin_pinglun_pen"
+            android:drawablePadding="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp15"
+            android:text="写评论"
+            android:textColor="#B7B8B5"
+            android:textSize="@dimen/sp13"/>
+
+    </RelativeLayout>
+
+    <!--底部布局-->
+    <RelativeLayout
+        android:id="@+id/control_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_above="@+id/pb_mini"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/has_played"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="00:00"
+                android:textColor="@color/white"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:indeterminateDrawable="@drawable/uvv_star_play_progress_seek"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/uvv_star_play_progress_seek"
+                android:thumb="@mipmap/uvv_seek_dot"
+                android:thumbOffset="10dip"/>
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp15"
+                android:text="00:00"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_mini"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        android:progress="0"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageVideoButton"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/shipin_button_zanting"
+        android:visibility="gone"/>
+
+</RelativeLayout>

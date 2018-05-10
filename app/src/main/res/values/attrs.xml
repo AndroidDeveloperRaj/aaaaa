@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--个人中心实名认证的圆形头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <!-- 录制视频用 -->
+    <declare-styleable name="MovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="record_max_time" format="integer" />
+        <!-- 视频分辨率宽度 -->
+        <attr name="video_width" format="integer" />
+        <!-- 视频分辨率高度 -->
+        <attr name="video_height" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsDividerWidthWrap" format="boolean" />
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <attr name="pstsTextSelectedColor" format="color" />
+        <!--缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3-->
+        <attr name="pstsScaleZoomMax" format="float" />
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="UniversalMediaController">
+        <attr name="uvv_scalable" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="UniversalVideoView">
+        <attr name="uvv_fitXY" format="boolean" />
+        <attr name="uvv_autoRotation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeSlider">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskColor" format="color" />
+        <attr name="tickCount" format="integer" />
+        <attr name="leftThumbIndex" format="integer" />
+        <attr name="rightThumbIndex" format="integer" />
+        <attr name="leftThumbDrawable" format="reference" />
+        <attr name="rightThumbDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundAngleFrameLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference" />
+        <attr name="pressedTextColor" format="color|reference" />
+        <attr name="unableTextColor" format="color|reference" />
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference" />
+        <attr name="strokeDashGap" format="dimension|reference" />
+        <attr name="normalStrokeWidth" format="dimension|reference" />
+        <attr name="pressedStrokeWidth" format="dimension|reference" />
+        <attr name="unableStrokeWidth" format="dimension|reference" />
+        <attr name="normalStrokeColor" format="color|reference" />
+        <attr name="pressedStrokeColor" format="color|reference" />
+        <attr name="unableStrokeColor" format="color|reference" />
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference" />
+        <attr name="pressedBackgroundColor" format="color|reference" />
+        <attr name="unableBackgroundColor" format="color|reference" />
+
+        <!--background radius-->
+        <attr name="statebutton_radius" format="dimension|reference" />
+        <attr name="round" format="boolean|reference" />
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="StateImageView">
+        <attr name="normalBackground" format="color|reference" />
+        <attr name="pressedBackground" format="color|reference" />
+        <attr name="unableBackground" format="color|reference" />
+
+        <!--animation duration-->
+        <attr name="AnimationDuration" format="integer|reference" />
+    </declare-styleable>
+
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconMargin" format="dimension"/>
+    <attr name="iconSrc" format="reference"/>
+    <attr name="iconLeft" format="reference"/>
+    <attr name="iconRight" format="reference"/>
+    <attr name="duration_max" format="integer"/>
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize"/>
+        <attr name="iconMargin"/>
+        <attr name="iconSrc"/>
+        <attr name="iconLeft"/>
+        <attr name="iconRight"/>
+        <attr name="duration_max"/>
+    </declare-styleable>
+</resources>

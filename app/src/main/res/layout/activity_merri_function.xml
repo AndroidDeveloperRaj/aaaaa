@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_make_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_warn"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_fun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发帖赚现金，收徒赚更多"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/dp22" />
+
+        <TextView
+            android:id="@+id/tv_toshare_makemoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp25"
+            android:drawablePadding="@dimen/dp5"
+            android:drawableRight="@mipmap/xiayiceng_xiaofen"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp20"
+            android:text="邀请赚钱"
+            android:textColor="@color/FF3D6F"
+            android:textSize="@dimen/sp15"
+            android:layout_marginBottom="@dimen/dp20"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_btn"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp90">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gantanhao" />
+
+        <TextView
+            android:layout_width="@dimen/dp240"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="禁止用户发布有关政治、色情、反动、等国家法律法规 所禁止的内容和广告!自觉遵守“七条底线”要求，否则平 台将采取删帖、永久封号并提交法律机关进行处理！"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_close"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lay_xiangce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:src="@mipmap/icon_fabu_album" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="相册"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_make_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:src="@mipmap/icon_fb_video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="视频制作"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_make_graphic_album"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:src="@mipmap/icon_fb_graphic_album" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="图文制作"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/dp15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lay_take_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:src="@mipmap/icon_fb_tp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="拍照"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/dp15" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp80"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:src="@mipmap/icon_fb_camera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="录像"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/dp15" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp20"
+        android:padding="@dimen/dp10"
+        android:src="@mipmap/login_close" />
+</RelativeLayout>

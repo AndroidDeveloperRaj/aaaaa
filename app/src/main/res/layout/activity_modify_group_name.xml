@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.merrichat.net.view.ClearEditText
+        android:id="@+id/et_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:hint=""
+        android:lines="1"
+        android:maxLength="32"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp15"
+        android:textColor="@color/normal_black"
+        android:textColorHint="@color/login_edt_hint_color"
+        android:textSize="@dimen/sp15" />
+
+    <TextView
+        android:id="@+id/tv_add_picture"
+        android:layout_width="@dimen/dp105"
+        android:layout_height="@dimen/dp24"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/shape_shop_add_picture"
+        android:gravity="center"
+        android:text="+  添加图片"
+        android:textColor="@color/black_new_two"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

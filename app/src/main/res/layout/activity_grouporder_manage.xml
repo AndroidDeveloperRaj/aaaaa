@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.merrichat.net.view.PagerSlidingTabStrip
+        android:id="@+id/page_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/white"
+        android:textColor="@color/black_new_two"
+        android:textSize="@dimen/sp15"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/normal_red"
+        app:pstsIndicatorHeight="@dimen/dp2"
+        app:pstsScaleZoomMax="0.0"
+        app:pstsShouldExpand="true"
+        app:pstsTextSelectedColor="@color/normal_red"
+        app:pstsUnderlineHeight="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/ffe2e5e7" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

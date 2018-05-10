@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_show_editText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/base_E2E5E7" />
+
+        <com.merrichat.net.view.ClearEditText
+            android:id="@+id/show_editText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@+id/view_top"
+            android:layout_toLeftOf="@+id/view_center"
+            android:background="@color/transparent"
+            android:hint="说点你的心得吧..."
+            android:inputType="text|textMultiLine"
+            android:paddingLeft="@dimen/dp10"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/sp13" />
+
+        <View
+            android:id="@+id/view_center"
+            android:layout_width="@dimen/dp0.5"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/show_editText"
+            android:layout_alignTop="@+id/show_editText"
+            android:layout_margin="@dimen/dp10"
+            android:layout_toLeftOf="@+id/btn_show_release"
+            android:background="@color/base_E2E5E7" />
+
+        <Button
+            android:id="@+id/btn_show_release"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/normal_red"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp13" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_below="@+id/show_editText"
+            android:background="@color/base_E2E5E7" />
+    </RelativeLayout>
+
+</LinearLayout>

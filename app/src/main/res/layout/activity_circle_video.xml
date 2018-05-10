@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refreshLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/recycler_view_video"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp44">
+
+                <ImageView
+                    android:id="@+id/iv_close_comment"
+                    android:layout_width="@dimen/dp44"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp15"
+                    android:src="@mipmap/pinglun_guanbi"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp10">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dp32"
+                android:layout_height="@dimen/dp32"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp7"
+                android:src="@mipmap/shipin_fanhui"/>
+
+            <ImageView
+                android:id="@+id/iv_right_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="@dimen/dp8"
+                android:paddingLeft="@dimen/dp7"
+                android:paddingRight="@dimen/dp7"
+                android:src="@mipmap/shipin_gengduo"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40.5dp"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:id="@+id/view_anim"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@color/white"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

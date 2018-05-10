@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/touch_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_chatting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/iv_other_img"
+            android:layout_width="@dimen/dp140"
+            android:layout_height="@dimen/dp140"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp100"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_preloading" />
+
+        <TextView
+            android:id="@+id/tv_other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_other_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp18" />
+
+        <TextView
+            android:id="@+id/tv_hang_up"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_below="@+id/tv_other_name"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@mipmap/icon_chat_hang_up"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/dis_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hang_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="挂断"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_contour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp110"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/mianti"
+                android:layout_width="@dimen/dp66"
+                android:layout_height="@dimen/dp66"
+                android:background="@drawable/shape_radius_wite_100"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ic_voice_state"
+                    android:layout_width="@dimen/dp26"
+                    android:layout_height="@dimen/dp26"
+                    android:background="@mipmap/ic_mianti" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/voice_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mianti"
+                android:layout_below="@+id/mianti"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="@dimen/dp6"
+                android:text="免提"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/voice_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ic_gift"
+                android:layout_below="@+id/ic_gift"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="@dimen/dp6"
+                android:text="送礼物"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/ic_gift"
+                android:layout_width="@dimen/dp66"
+                android:layout_height="@dimen/dp66"
+                android:layout_marginLeft="@dimen/dp110"
+                android:layout_toRightOf="@+id/mianti"
+                android:background="@mipmap/ic_gift_label" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/iv_my_img"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp100"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_preloading" />
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_my_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="对方昵称"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp18" />
+
+
+        <TextView
+            android:id="@+id/tv_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_my_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp15"
+            android:text="等待对方接受语音聊天..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+
+        <TextView
+            android:id="@+id/tv_answer_hang_up"
+            android:layout_width="@dimen/dp66"
+            android:layout_height="@dimen/dp66"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:background="@mipmap/icon_chat_hang_up"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+
+        <TextView
+            android:id="@+id/tv_hang_up_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="挂断"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/voice_top_close"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp32"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top"
+        android:layout_margin="@dimen/dp16"
+        android:background="@drawable/shape_close_hui_circle"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp10"
+            android:layout_height="@dimen/dp10"
+            android:background="@mipmap/icon_tp_close"
+            android:scaleType="center" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/connection_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp130"
+        android:layout_marginTop="@dimen/dp35"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+
+    <com.merrichat.net.activity.meiyu.fragments.view.GiftItemView
+        android:id="@+id/gift_item_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp120"
+        android:clipChildren="true"></com.merrichat.net.activity.meiyu.fragments.view.GiftItemView>
+
+
+</RelativeLayout>

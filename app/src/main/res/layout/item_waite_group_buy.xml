@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_sell_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_toStartOf="@+id/tv_sell_state"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="卖家昵称："
+        android:textColor="@color/black_262626"
+        android:textSize="@dimen/sp_14" />
+
+
+    <TextView
+        android:id="@+id/tv_sell_state"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:text="等待成团"
+        android:textColor="@color/normal_red"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:id="@+id/rl_sell_content"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_below="@+id/tv_sell_name"
+        android:background="@color/white_2">
+
+        <ImageView
+            android:id="@+id/iv_sell_content_url"
+            android:layout_width="@dimen/dp92"
+            android:layout_height="@dimen/dp92"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/background" />
+
+        <TextView
+            android:id="@+id/tv_sell_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_toRightOf="@+id/iv_sell_content_url"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/black_262626"
+            android:textSize="@dimen/sp15" />
+
+
+        <TextView
+            android:id="@+id/tv_sell_content_discripe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sell_content_title"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_sell_content_url"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp12" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_order_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_sell_content"
+        android:layout_marginRight="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:text="共1件商品 合计： (含运费 0.00)"
+        android:textColor="@color/normal_black"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_below="@+id/tv_order_pay"
+        android:background="@color/line_grayD9" />
+
+    <RelativeLayout
+        android:id="@+id/rl_commnuication"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp51"
+        android:layout_below="@+id/v_line">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_call_seller"
+                android:layout_width="@dimen/dp75"
+                android:layout_height="@dimen/dp25"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_toLeftOf="@+id/tv_order_state"
+                android:background="@drawable/shape_contact_buyer"
+                android:gravity="center"
+                android:text="联系卖家"
+                android:textColor="@color/base_093FFF"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_order_state"
+                android:layout_width="@dimen/dp75"
+                android:layout_height="@dimen/dp25"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:background="@drawable/shape_contact_seller"
+                android:gravity="center"
+                android:text="邀请好友"
+                android:textColor="@color/FF3D6F"
+                android:textSize="@dimen/sp12" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_check_trans_map"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/shape_contact_cancle"
+            android:gravity="center"
+            android:text="查看物流"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_below="@+id/rl_commnuication"
+        android:id="@+id/v_line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/background" />
+
+
+</RelativeLayout>

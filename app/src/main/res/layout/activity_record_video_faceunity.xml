@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--相机-->
+    <com.merrichat.net.view.AspectFrameLayout
+        android:id="@+id/afl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.merrichat.net.view.AspectFrameLayout>
+    <!--倒计时-->
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/normal_d7"
+        android:textSize="@dimen/dp80" />
+
+    <com.merrichat.net.view.SteppingProgressBar
+        android:id="@+id/step_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp6"
+        android:background="@color/c_2B2938" />
+    <!--顶部按钮-->
+
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@+id/step_bar">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:src="@mipmap/icon_tp_close" />
+
+        <ImageView
+            android:id="@+id/iv_camera_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:src="@mipmap/icon_tp_setting" />
+
+        <ImageView
+            android:id="@+id/iv_camera_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp20"
+            android:src="@mipmap/icon_tp_switch" />
+    </RelativeLayout>
+
+    <!--拍摄时间实时显示-->
+    <TextView
+        android:id="@+id/tv_recorded_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp21"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lay_top"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@drawable/shape_timer_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:text="0.0秒"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp12" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_duration_type"
+        android:layout_width="@dimen/dp75"
+        android:layout_height="@dimen/dp24"
+        android:layout_above="@+id/lay_speed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/shape_grey_40"
+        android:gravity="center"
+        android:text="15秒"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <!--速度设置-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lay_speed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:layout_above="@+id/lay_bottom1"
+        android:layout_marginLeft="@dimen/dp32"
+        android:layout_marginRight="@dimen/dp32"
+        android:background="@drawable/shape_black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tab_very_slow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="极慢"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_tab_slow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="慢"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_tab_standard_speed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white"
+            android:gravity="center"
+            android:text="标准"
+            android:textColor="@color/c_6b6c73"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_tab_fast"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="快"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_tab_very_fast"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="极快"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+    <!--底部美颜魔拍完成按钮以及图片列表-->
+
+    <RelativeLayout
+        android:id="@+id/lay_bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp144"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom" />
+
+    <RelativeLayout
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toLeftOf="@+id/iv_tp_take"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/iv_record_beautify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp5"
+                android:drawableTop="@mipmap/icon_record_beautify"
+                android:gravity="center"
+                android:text="美颜"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp10" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:id="@+id/iv_record_magic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="@dimen/dp5"
+                    android:drawableTop="@mipmap/icon_record_magic"
+                    android:gravity="center"
+                    android:text="魔拍"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp10" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_hot"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp9"
+                    android:layout_alignRight="@+id/iv_record_magic"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/shape_button_hot"
+                    android:gravity="center"
+                    android:text="HOT"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/sp7" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:id="@+id/v_temp"-->
+        <!--android:layout_width="@dimen/dp90"-->
+        <!--android:layout_height="@dimen/dp90"-->
+        <!--android:layout_centerInParent="true"/>-->
+        <!--拍照录视频按钮-->
+
+        <ImageView
+            android:id="@+id/iv_tp_take"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp90"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp22"
+            android:layout_marginTop="@dimen/dp32"
+            android:src="@mipmap/icon_record_take" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_tp_take"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_record_dele"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_record_dele" />
+
+            <ImageView
+                android:id="@+id/iv_record_complete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_tp_complete" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--美颜布局隐藏点击区域-->
+    <TextView
+        android:id="@+id/tv_touch_beautify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_beautify_control"
+        android:layout_below="@+id/lay_top"
+        android:visibility="gone" />
+    <!--魔拍布局隐藏点击区域-->
+    <TextView
+        android:id="@+id/tv_touch_magic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_magic_control"
+        android:layout_below="@+id/lay_top"
+        android:visibility="gone" />
+
+
+    <!--美颜布局-->
+    <LinearLayout
+        android:id="@+id/lay_beautify_control"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp235"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_new_two_70"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--tab-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp36">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tab_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="滤镜"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+
+                <TextView
+                    android:id="@+id/tv_tab_blur_level"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="磨皮"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+
+                <TextView
+                    android:id="@+id/tv_tab_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="美白"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+
+                <TextView
+                    android:id="@+id/tv_tab_cheekthin_level"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="瘦脸"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+
+                <TextView
+                    android:id="@+id/tv_tab_enlarge_eye"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="大眼"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+            </LinearLayout>
+            <!--tab下划线-->
+            <View
+                android:id="@+id/view_line_beautify"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white_80" />
+            <!--tab下划线-->
+            <!--指示器-->
+            <View
+                android:id="@+id/v_indicator_beautify"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp2.5"
+                android:layout_alignParentBottom="true"
+                android:background="@color/normal_red" />
+            <!--指示器-->
+        </RelativeLayout>
+        <!--tab-->
+
+        <!--content-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--filter select-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+            <!--filter select-->
+            <!--磨皮-->
+            <LinearLayout
+                android:id="@+id/lay_blur_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_blur_level0"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:background="@drawable/bg_none_beautify_selected"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/btn_blur_level1"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:background="@drawable/shape_beautify_circle_unselected"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_blur_level2"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:background="@drawable/shape_beautify_circle_unselected"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_blur_level3"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:background="@drawable/shape_beautify_circle_unselected"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_blur_level4"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:background="@drawable/shape_beautify_circle_unselected"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_blur_level5"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp8"
+                    android:background="@drawable/shape_beautify_circle_unselected"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="22sp" />
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_blur_level6"-->
+                <!--android:layout_width="@dimen/dp35"-->
+                <!--android:layout_height="@dimen/dp35"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="@dimen/dp8"-->
+                <!--android:background="@drawable/shape_beautify_circle_unselected"-->
+                <!--android:gravity="center"-->
+                <!--android:text="6"-->
+                <!--android:textColor="@color/black_new_two"-->
+                <!--android:textSize="22sp" />-->
+
+            </LinearLayout>
+            <!--磨皮-->
+            <!--美白-->
+            <LinearLayout
+                android:id="@+id/lay_color_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp20"
+                android:visibility="gone">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/sb_color_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bsb_auto_adjust_section_mark="true"
+                    app:bsb_max="100"
+                    app:bsb_second_track_color="@color/normal_red"
+                    app:bsb_section_count="10"
+                    app:bsb_section_text_position="sides"
+                    app:bsb_show_section_mark="false"
+                    app:bsb_show_section_text="true"
+                    app:bsb_show_thumb_text="true"
+                    app:bsb_thumb_text_size="18sp"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_track_color="@color/white_80" />
+            </LinearLayout>
+            <!--美白-->
+            <!--瘦脸-->
+            <LinearLayout
+                android:id="@+id/lay_cheekthin_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp20"
+                android:visibility="gone">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/sb_cheekthin_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bsb_auto_adjust_section_mark="true"
+                    app:bsb_max="100"
+                    app:bsb_second_track_color="@color/normal_red"
+                    app:bsb_section_count="10"
+                    app:bsb_section_text_position="sides"
+                    app:bsb_show_section_mark="false"
+                    app:bsb_show_section_text="true"
+                    app:bsb_show_thumb_text="true"
+                    app:bsb_thumb_text_size="18sp"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_track_color="@color/white_80" />
+
+            </LinearLayout>
+            <!--瘦脸-->
+            <!--大眼-->
+            <LinearLayout
+                android:id="@+id/lay_enlarge_eye_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp20"
+                android:visibility="gone">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/sb_enlarge_eye_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bsb_auto_adjust_section_mark="true"
+                    app:bsb_max="100"
+                    app:bsb_second_track_color="@color/normal_red"
+                    app:bsb_section_count="10"
+                    app:bsb_section_text_position="sides"
+                    app:bsb_show_section_mark="false"
+                    app:bsb_show_section_text="true"
+                    app:bsb_show_thumb_text="true"
+                    app:bsb_thumb_text_size="18sp"
+                    app:bsb_touch_to_seek="true"
+                    app:bsb_track_color="@color/white_80" />
+
+            </LinearLayout>
+            <!--大眼-->
+
+        </RelativeLayout>
+        <!--content-->
+
+    </LinearLayout>
+    <!--魔拍布局-->
+    <LinearLayout
+        android:id="@+id/lay_magic_control"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp235"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_new_two_70"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+    <!--拍照录视频按钮-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_tp_take"-->
+    <!--android:layout_width="@dimen/dp90"-->
+    <!--android:layout_height="@dimen/dp90"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="@dimen/dp32"-->
+    <!--android:src="@mipmap/icon_record_take"/>-->
+</RelativeLayout>

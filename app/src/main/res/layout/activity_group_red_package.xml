@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.flyco.tablayout.SegmentTabLayout
+                android:id="@+id/sg_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp73"
+                android:layout_marginRight="@dimen/dp73"
+                android:layout_marginTop="@dimen/dp10"
+                tl:tl_bar_color="@color/white"
+                tl:tl_divider_color="@color/transparent"
+                tl:tl_indicator_color="@color/FF3D6F"
+                tl:tl_indicator_corner_radius="4dp"
+                tl:tl_tab_padding="20dp"
+                tl:tl_textUnselectColor="@color/base_6D6D6D"
+                tl:tl_textsize="@dimen/dp13" />
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_white_3"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_xianjin_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_xianjin_type"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/accept_2x_true" />
+
+                    <TextView
+                        android:id="@+id/tv_xianjin_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:text="现金"
+                        android:textColor="@color/base_FF3D6F"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_meibi_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_meibi_type"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/button_weixuanzhong_shixin" />
+
+                    <TextView
+                        android:id="@+id/tv_meibi_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:text="讯美币"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_white_3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="总金额"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <EditText
+                    android:id="@+id/et_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="end"
+                    android:hint="0.00"
+                    android:inputType="number"
+                    android:textColor="@color/black_new_two"
+                    android:textColorHint="@color/base_9E9FAB"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tv_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="元"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/shape_white_3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nums_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:text="邀请人数"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+
+                <EditText
+                    android:id="@+id/et_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="end"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:text=""
+                    android:textColor="@color/black_new_two"
+                    android:textColorHint="@color/base_9E9FAB"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tv_end_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="人"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_mid_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingTop="@dimen/dp10"
+                android:text="本群共122人"
+                android:textColor="@color/base_888888"
+                android:textSize="@dimen/dp12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:background="@drawable/shape_white_3"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_write_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="你好,可以交个朋友吗！"
+                    android:padding="@dimen/dp10"
+                    android:text=""
+                    android:textColor="@color/black_new_two"
+                    android:textColorHint="@color/base_9E9FAB"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_yuan_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="￥"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_end_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp40" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp42"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@drawable/shape_onclick"
+                android:gravity="center"
+                android:text="塞钱进红包"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp15" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

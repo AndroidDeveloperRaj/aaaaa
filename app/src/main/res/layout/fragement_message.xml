@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <com.merrichat.net.view.PagerSlidingTabStrip
+            android:id="@+id/page_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textColor="@color/base_9E9FAB"
+            android:textSize="@dimen/dp15"
+            app:pstsTabPaddingLeftRight="@dimen/dp10"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsIndicatorColor="@color/normal_red"
+            app:pstsIndicatorHeight="@dimen/dp2"
+            app:pstsScaleZoomMax="0.0"
+            app:pstsTextAllCaps="false"
+            app:pstsTextSelectedColor="@color/normal_red"
+            app:pstsUnderlineHeight="0dp" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:scaleType="center"
+            android:src="@mipmap/icon_chatting_tip_jia" />
+
+    </RelativeLayout>
+
+    <com.merrichat.net.view.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_tabs" />
+
+</LinearLayout>

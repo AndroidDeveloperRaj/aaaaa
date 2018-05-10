@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:paddingRight="15dp">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_my_header"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        app:placeholderImage="@mipmap/ic_preloading"
+                        app:roundAsCircle="true"
+                        app:roundingBorderWidth="@dimen/dp1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/iv_my_header"
+                        android:text="修改头像"
+                        android:textColor="@color/cccccc"
+                        android:textSize="@dimen/sp15" />
+
+
+                    <ImageView
+                        android:id="@+id/perfection_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_nick_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tvs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="昵称"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+
+                    <TextView
+                        android:id="@+id/tv_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tvs"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:id="@+id/iv_row_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="性别"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv2"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:id="@+id/perfection_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_shengao"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_shengao_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="身高"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_shengao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+
+                        android:layout_toRightOf="@+id/tv_shengao_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tizhong"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_tizhong_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="体重"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_tizhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_tizhong_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_xuexing"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_xuexing_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="血型"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_xuexing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_xuexing_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_minzu"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_minzu_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="民族"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_minzu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_minzu_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_zongjiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_zongjiao_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="宗教"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_zongjiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_zongjiao_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_xueli"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_xueli_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="学历"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_xueli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_xueli_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/line_width_left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_sheng_ri"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp64"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tvsd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="生日"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_sheng_ri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tvsd"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_gerenjianjie"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tvgrjj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="个性签名"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_grjj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tvgrjj"
+                        android:ellipsize="end"
+                        android:hint="未填写"
+                        android:maxLines="4"
+                        android:paddingBottom="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:textColor="@color/normal_black"
+                        android:textColorHint="@color/cccccc"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_guxiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp64"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tvgx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="故乡"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_guxiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toLeftOf="@+id/ivgx"
+                        android:layout_toRightOf="@+id/tvgx"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:id="@+id/ivgx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_juzhudi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp64"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tvjzd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="居住地"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_juzhudi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp35"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toLeftOf="@+id/ivjzd"
+                        android:layout_toRightOf="@+id/tvjzd"
+                        android:background="@null"
+                        android:paddingRight="@dimen/dp10"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:id="@+id/ivjzd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <View style="@style/line_width_left" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_zhiye"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp64"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_zhiye_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="职业"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_zhiye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_zhiye_text"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/xiayiceng_button_tongyong2x" />
+                </RelativeLayout>
+
+                <View style="@style/line_width_left" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp64"
+
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_danwei_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="单位"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/sp15" />
+
+                    <EditText
+                        android:id="@+id/tv_danwei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toRightOf="@+id/tv_danwei_text"
+                        android:background="@null"
+                        android:textColor="@color/normal_black"
+                        android:textSize="@dimen/sp15" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ganqing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="感情状态"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tv_ganqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp70"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp10"
+                    android:textColor="@color/normal_black"
+                    android:textSize="@dimen/sp15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/xiayiceng_button_tongyong2x" />
+
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/text_ff3d6f_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="教育经历" />
+
+                <TextView
+                    android:id="@+id/tv_tianjia_jiaoyu"
+                    style="@style/text_base_093FFF_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_receclerView_jiaoyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/rl_edu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80">
+
+                <TextView
+                    android:id="@+id/tv_jiaoyu_jingli"
+                    style="@style/text_ff3d6f_13"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="添加教育经历遇见更多同窗校友" />
+            </RelativeLayout>
+
+            <View style="@style/line_width_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp64"
+
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/text_ff3d6f_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="工作经历" />
+
+                <TextView
+                    android:id="@+id/tv_tianjia_gongzuo"
+                    style="@style/text_base_093FFF_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="添加" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_receclerView_gongzuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />
+
+            <RelativeLayout
+                android:id="@+id/rl_work"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp80">
+
+                <TextView
+                    android:id="@+id/tv_gongzuo_jingli"
+                    style="@style/text_ff3d6f_13"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="添加工作经历遇见更多同窗同事" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

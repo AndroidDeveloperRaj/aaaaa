@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp10">
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp15"
+            android:id="@+id/lin_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/cv_comment_photo"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                fresco:placeholderImage="@mipmap/ic_preloading"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="true"/>
+
+            <View
+                android:id="@+id/view_line1"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/base_E2E5E7"
+                android:layout_marginLeft="@dimen/dp20"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp15"
+            android:id="@+id/rel_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp7"
+                android:layout_marginTop="@dimen/dp5"
+                android:text=""
+                android:textColor="@color/text_6D92EF"
+                android:textSize="@dimen/sp14"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp7"
+                android:layout_below="@+id/tv_comment_name"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/tv_comment_contant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dp3"
+                    android:text=""
+                    android:textColor="@color/base_888888"
+                    android:textSize="@dimen/sp11"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_toRightOf="@+id/tv_comment_contant"
+                    android:text="7-17 11：00"
+                    android:textColor="#D1D1D1"
+                    android:textSize="@dimen/dp11"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_hui_fu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回复"
+                    android:textColor="@color/base_888888"
+                    android:textSize="@dimen/dp11"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_hui_fu_dian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:text="·"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp20"/>
+
+                <CheckBox
+                    android:id="@+id/show_evaluate_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check_show_zan"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/dp4"
+                    android:text=""
+                    android:textColor="@drawable/selector_check_show_zan_textcolor"
+                    android:textSize="@dimen/dp11"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:paddingBottom="@dimen/dp15"/>
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@color/base_E2E5E7"/>
+
+        <View
+            android:id="@+id/view_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp60"
+            android:background="@color/base_E2E5E7"/>
+
+</LinearLayout>

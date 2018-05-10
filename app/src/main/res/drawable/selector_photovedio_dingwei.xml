@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/normal_red" android:drawable="@drawable/fenxiang_click_dingwei3x" android:state_selected="true" />
+    <item android:color="@color/base_888888" android:drawable="@drawable/fenxiang_dingwei3x" android:state_selected="false" />
+</selector>

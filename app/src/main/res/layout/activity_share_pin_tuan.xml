@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp180"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/shijian_2x"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/normal_black"
+            android:text=""
+            android:layout_marginTop="@dimen/dp25"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp210"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还差"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/normal_black"/>
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/normal_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人，赶紧邀请好友来拼单吧！"
+                android:textSize="@dimen/sp15"
+                android:textColor="@color/normal_black"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:background="@color/line_grayD9"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp25"
+            android:paddingRight="@dimen/dp25">
+
+            <ImageView
+                android:id="@+id/imageView_weChat"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:background="@mipmap/weixin_fenxiang"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信"
+                android:textColor="@color/normal_black"
+                android:layout_marginTop="@dimen/dp10"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

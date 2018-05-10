@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- 主页显示 Tab 我的动态-->
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_waite_group_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <View
+                android:id="@+id/v_waite_group_buy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/valuate_tab_selector" />
+
+            <TextView
+                android:id="@+id/tv_waite_group_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="待成团"
+                android:textColor="@drawable/dailytask_tab_textcolor_selector"
+                android:textSize="@dimen/sp_14" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_waite_group_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/v_waite_group_send"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/valuate_tab_selector" />
+
+            <TextView
+                android:id="@+id/tv_waite_group_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="待发货"
+                android:textColor="@drawable/dailytask_tab_textcolor_selector"
+                android:textSize="@dimen/sp_14" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_group_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/v_group_send"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/valuate_tab_selector" />
+
+            <TextView
+                android:id="@+id/tv_group_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="已发货"
+                android:textColor="@drawable/dailytask_tab_textcolor_selector"
+                android:textSize="@dimen/sp_14" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_group_buy_over"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/v_group_buy_over"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/valuate_tab_selector" />
+
+            <TextView
+                android:id="@+id/tv_group_buy_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="已结束"
+                android:textColor="@drawable/dailytask_tab_textcolor_selector"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_group_buy_over_arbitrament"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/v_group_buy_over_arbitrament"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp2"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/valuate_tab_selector" />
+
+            <TextView
+                android:id="@+id/tv_group_buy_over_arbitrament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="仲裁退款"
+                android:textColor="@drawable/dailytask_tab_textcolor_selector"
+                android:textSize="@dimen/sp_14" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- 内容显示 -->
+    <com.merrichat.net.weidget.HomeViewPager
+        android:id="@+id/home_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_tab"
+        android:background="@color/background" />
+</RelativeLayout>

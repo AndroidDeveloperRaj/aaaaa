@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp40"
+            android:src="@mipmap/shijian_2x" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp25"
+            android:textColor="@color/black_new_two"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text=""
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp50" />
+
+        <TextView
+            android:id="@+id/tv_lq_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="24小时对方不领取将自动退回"
+            android:textColor="@color/base_888888"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp42"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@drawable/shape_onclick"
+            android:gravity="center"
+            android:text="确认收币"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp15"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_zz_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转账时间：2018-01-02 14:14:57"
+                android:textColor="@color/base_888888"
+                android:textSize="@dimen/dp12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_th_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="退还时间：2018-01-02 14:14:57"
+                android:textColor="@color/base_888888"
+                android:textSize="@dimen/dp12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

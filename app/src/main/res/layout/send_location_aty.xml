@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/mMapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/iv_location_tip"
+                android:layout_width="@dimen/dp18"
+                android:layout_height="@dimen/dp37"
+                android:layout_above="@+id/view"
+                android:layout_marginBottom="-2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:src="@mipmap/icon_gcoding" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/ib_location"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/shape_white_2"
+                android:src="@mipmap/icon_location_send"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_poi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+    </LinearLayout>
+</LinearLayout>

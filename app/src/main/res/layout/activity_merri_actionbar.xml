@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp30"
+            android:paddingTop="@dimen/dp10"
+            android:src="@mipmap/fanhui_button_tongyong2x"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/actionbar_btn_selecter"
+            android:padding="8dp"
+            android:text="个人中心"
+            android:textColor="#231815"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Test"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/dp18"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/actionbar_btn_selecter"
+            android:paddingRight="@dimen/dp15"
+            android:src="@mipmap/icon_logo"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/actionbar_btn_selecter"
+            android:text="注册"
+            android:textColor="@color/base_FF3D6F"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_actionbar"
+        android:background="@color/background" />
+</RelativeLayout>

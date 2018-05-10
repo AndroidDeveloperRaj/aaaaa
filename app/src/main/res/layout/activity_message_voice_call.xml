@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#686868">
+
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp110"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/iv_other_img"
+            android:layout_width="@dimen/dp100"
+            android:layout_height="@dimen/dp100"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_preloading" />
+
+        <TextView
+            android:id="@+id/tv_other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp28" />
+
+        <TextView
+            android:id="@+id/tv_connet_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="正在等待对方接受邀请"
+            android:textColor="@color/base_E2E5E7"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/connection_time"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp130"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+
+    <TextView
+        android:id="@+id/tv_caller_hang_up"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp50"
+        android:background="@drawable/shape_sou_suo"
+        android:gravity="center"
+        android:text="挂断"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_answer_hang_up"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp50"
+            android:background="@mipmap/icon_chat_hang_up"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/tv_answer_answer"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp50"
+            android:background="@mipmap/icon_voice_jieting"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

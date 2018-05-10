@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/activity_title"/>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/sg_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp73"
+        android:layout_marginRight="@dimen/dp73"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tl:tl_bar_color="@color/white"
+        tl:tl_divider_color="@color/transparent"
+        tl:tl_indicator_color="@color/FF3D6F"
+        tl:tl_indicator_corner_radius="4dp"
+        tl:tl_tab_padding="20dp"
+        tl:tl_textUnselectColor="@color/base_6D6D6D"
+        tl:tl_textsize="@dimen/dp13"/>
+
+    <com.merrichat.net.view.CustomViewPager
+        android:id="@+id/viewPager_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

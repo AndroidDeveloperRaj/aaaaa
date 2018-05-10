@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp57"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/cv_header"
+            android:layout_width="@dimen/dp37"
+            android:layout_height="@dimen/dp37"
+            android:background="@mipmap/ic_preloading"
+            android:layout_marginRight="@dimen/dp10"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    style="@style/text_222222_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红安" />
+
+                <TextView
+                    android:id="@+id/tv_item_date"
+                    style="@style/text_9e9fab_11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11月2日 09:29" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_allnum"
+                style="@style/text_ff3d6f_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="$8.99" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/line_width_left" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            style="@style/text_222222_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="奖励来源" />
+
+        <TextView
+            android:id="@+id/tv_item_from"
+            style="@style/text_9e9fab_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="视频通话" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_item_meiyou_level"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:paddingLeft="@dimen/dp10">
+
+        <View style="@style/line_width_match" />
+
+        <TextView
+            style="@style/text_222222_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="徒弟等级" />
+
+        <TextView
+            android:id="@+id/tv_item_meiyou_level"
+            style="@style/text_base_093FFF_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp10"
+            android:text="直接奖励/简介奖励" />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/line_width_left"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

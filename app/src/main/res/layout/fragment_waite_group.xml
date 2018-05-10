@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/waiting_for_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="@null"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+    <include
+        layout="@layout/layout_empty"></include>
+
+
+</RelativeLayout>

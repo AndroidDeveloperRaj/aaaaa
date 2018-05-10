@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">讯美</string>
+    <!-- 特殊字符 -->
+    <string name="money_character">&#165;</string>
+    <string name="multiply_character">&#215;</string>
+
+    <string name="pull_to_refresh">下拉刷新...</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="release_to_refresh">松开立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+
+    <string name="str_recorder_normal">按住   说话</string>
+    <string name="str_recorder_recording">松开   结束</string>
+    <string name="str_recorder_want_cancel">滑动手指，取消录音</string>
+    <string name="camera_open_error">启动相机失败</string>
+    <string name="not_specify_a_directory">未指定存储目录</string>
+    <string name="connect_to_server_fail">网络请求失败，请重试</string>
+    <string name="connect_to_server_fail2">服务器已断开连接，请重试</string>
+
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="weixin_app_id">wxa1cb75818e93b070</string>
+    <string name="weixin_app_secret">e2ab0b498324b41dfb19bb22b9678efa</string>
+    <!--<string name="qq_app_id">1104529551</string>-->
+    <!--<string name="qq_app_key">ewUTwG4Z9jtSeGVn</string>-->
+    <string name="qq_app_id">1106594529</string>
+    <string name="qq_app_key">AXOfgczwn6lDAmIx</string>
+    <string name="sina_app_id">2874939970</string>
+    <string name="sina_app_secret">ece3fc565f5e6d15ed7ccc21ca255bc1</string>
+
+
+    <string name="mis_folder_all">所有照片</string>
+    <string name="mis_preview">预览</string>
+    <string name="mis_msg_no_camera">没有系统相机</string>
+    <string name="mis_msg_amount_limit">已经达到最高选择数量</string>
+    <string name="mis_action_done">完成</string>
+    <string name="mis_photo_unit">张</string>
+    <string name="mis_tip_take_photo">拍摄照片</string>
+    <string name="mis_error_image_not_exist">图片错误</string>
+    <string name="mis_error_no_permission">无权限</string>
+    <string name="mis_permission_dialog_title">权限拒绝</string>
+    <string name="mis_permission_dialog_ok">好</string>
+    <string name="mis_permission_dialog_cancel">拒绝</string>
+    <string name="mis_permission_rationale">浏览图片需要您提供浏览存储的权限</string>
+    <string name="mis_permission_rationale_write_storage">保存拍照图片需要您提供写存储权限</string>
+    <string name="mis_action_button_string">%1$s(%2$d/%3$d)</string>
+    <string name="go_set">设置</string>
+    <string name="tui_chu">退出</string>
+    <string name="aliPay">支付宝支付</string>
+
+    <!-- android 8.0 添加动态权限申请 -->
+    <string name="permission_cancel">取消</string>
+    <string name="permission_setting">去设置</string>
+    <string name="permission_title_permission_failed">权限申请失败</string>
+    <string name="permission_message_permission_failed">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+
+    <string name="permission_resume">继续</string>
+    <string name="permission_title_permission_rationale">权限已被拒绝</string>
+    <string name="permission_message_permission_rationale">您已经拒绝过我们申请授权，请您同意授权，否则功能无法正常使用！</string>
+
+    <string name="ok">好的</string>
+    <string name="no">就不</string>
+
+    <string name="title_dialog">提示</string>
+    <string name="message_permission_failed">我们需要的一些必要权限被禁止，请授权给我们。</string>
+
+
+    <string name="share_title_log">快来看看这个有趣的帖子！</string>
+    <string name="share_content_log">这段图文太精彩，必须看！</string>
+    <string name="share_content_log_video">这个视频太好玩了，看了还想看！</string>
+
+    <string name="share_title">登录即领3-50元现金，可提现！</string>
+    <string name="share_content">这个APP超牛，一次可发99张图片还带音乐，特效多多，分享到朋友圈点赞无数。</string>
+
+    <string name="share_to_makemoney_title">分享有奖！</string>
+    <string name="share_to_makemoney_content">精彩分享给好友，赚取更多讯美币！</string>
+
+</resources>

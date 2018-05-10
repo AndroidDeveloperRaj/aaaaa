@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_tint_default.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/switch_thumb_material_dark.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_tint_switch_track.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_primary_text_material_light.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/switch_thumb_material_light.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_search_url_text.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/camera/build/intermediates/res/merged/release/color/abc_tint_edittext.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/color/abc_tint_edittext.xml"
+    }
+]

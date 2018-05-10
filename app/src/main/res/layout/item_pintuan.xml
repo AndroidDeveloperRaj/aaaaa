@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp70">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView_pintuan"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp10"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@mipmap/ic_preloading"
+        fresco:placeholderImageScaleType="fitXY"
+        fresco:roundAsCircle="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_toRightOf="@+id/simpleDraweeView_pintuan"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pintuan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尼古拉斯-赵四"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/sp15"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="还差1人"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp14"/>
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，剩余"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp14"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22:58.23"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_goto_pintuan"
+        android:layout_width="@dimen/dp75"
+        android:layout_height="@dimen/dp25"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/shape_text_pintuan"
+        android:drawableRight="@mipmap/xiayicengjixiaobai_2x"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:text="去拼团"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp12"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@color/background"/>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_tomakemoney"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp10">
+
+        <TextView
+            style="@style/text_222222_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp44"
+            android:gravity="center_vertical"
+            android:text="赚钱攻略" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/iv_nanshen_confirm"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                style="@style/text_ffffff_7sp"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp9"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@drawable/shape_text_hot"
+                android:gravity="center"
+                android:text="HOT"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/text_9e9fab_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="邀请好友赚钱" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_nanshen_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp10"
+            android:src="@mipmap/xiayiceng_button_tongyong2x" />
+    </RelativeLayout>
+
+</LinearLayout>

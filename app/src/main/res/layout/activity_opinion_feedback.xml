@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp250">
+
+        <EditText
+            android:id="@+id/editText_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/normal_black"
+            android:hint="请输入您想对我们说的话..."
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/sp15"
+            android:gravity="left|top"
+            android:padding="@dimen/dp10"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/line_grayD9"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/textView_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/200"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp15"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

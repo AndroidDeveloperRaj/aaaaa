@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:id="@+id/lay_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_add_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="请求添加对方为好友？"
+            android:textSize="@dimen/dp16" />
+
+        <TextView
+            android:id="@+id/tv_add_agree"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp24"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_button_video_music"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp12" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lv_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fastScrollEnabled="true"
+                android:listSelector="@color/transparent"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="none"
+                android:transcriptMode="normal" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </FrameLayout>
+
+    <!--<View style="@style/line_width_match" />-->
+
+    <include layout="@layout/layout_send_message_bar"/>
+
+    <View style="@style/line_width_match" />
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout
+        android:id="@+id/panel_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d8fcfcfc"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--<include-->
+        <!--android:id="@+id/ll_sub_panel"-->
+        <!--layout="@layout/layout_chatting_panel"-->
+        <!--android:visibility="gone" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_sub_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.merrichat.net.activity.meiyu.fragments.view.MyViewPager
+                android:id="@+id/vp_single_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.merrichat.net.activity.message.weidget.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:padding="3dp"
+                android:visibility="gone"
+                app:fillColor="#8b8b8b"
+                app:pageColor="#bbbbbb"
+                app:strokeWidth="0dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_face_book"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp190"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/face_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp140" />
+
+            <LinearLayout
+                android:id="@+id/face_dots_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+
+    </cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout>
+
+    <include
+        layout="@layout/common_gift_dialog_layout"
+        android:visibility="gone" />
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout>

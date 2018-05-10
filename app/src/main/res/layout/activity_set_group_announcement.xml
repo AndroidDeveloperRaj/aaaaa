@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300">
+
+        <EditText
+            android:id="@+id/et_announcement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="请输入群公告"
+            android:maxLength="300"
+            android:padding="@dimen/dp10"
+            android:maxEms="300"
+            android:textColor="@color/normal_black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp20"
+            android:text="0/300"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp15" />
+    </RelativeLayout>
+
+</LinearLayout>

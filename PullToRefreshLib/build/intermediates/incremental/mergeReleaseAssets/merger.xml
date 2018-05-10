@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/chenjingjing/Desktop/merri-old/aaaaa/PullToRefreshLib/assets"/><source path="/Users/chenjingjing/Desktop/merri-old/aaaaa/PullToRefreshLib/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/chenjingjing/Desktop/merri-old/aaaaa/PullToRefreshLib/build-types/release/assets"/></dataSet></merger>

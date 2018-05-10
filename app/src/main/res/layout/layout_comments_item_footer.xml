@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_hui_fu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp20"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="@dimen/dp20"
+            android:background="@color/base_E2E5E7"/>
+
+        <View
+            android:layout_width="@dimen/dp20"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/base_E2E5E7"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.merrichat.net.view.DrawableCenterTextView
+            android:id="@+id/tv_all_hui_fu"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10"
+            android:drawablePadding="@dimen/dp3"
+            android:drawableRight="@mipmap/icon_red_sj_down"
+            android:gravity="center"
+            android:text="查看6条回复/收起所有回复"
+            android:textColor="@color/normal_red"
+            android:textSize="@dimen/dp11"/>
+    </LinearLayout>
+</LinearLayout>

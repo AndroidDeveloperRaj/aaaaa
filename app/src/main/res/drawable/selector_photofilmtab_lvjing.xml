@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/normal_red" android:drawable="@drawable/zhaopian_click_lvjing3x" android:state_selected="true" />
+    <item android:color="@color/text_525252" android:drawable="@drawable/paizhao_lvjing3x" android:state_selected="false" />
+</selector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <ImageView
+        android:id="@+id/simple_cover_bg"
+        android:layout_width="@dimen/dp65"
+        android:layout_height="@dimen/dp65"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/magic_style_contact_select" />
+
+    <ImageView
+        android:id="@+id/simple_cover"
+        android:layout_width="@dimen/dp65"
+        android:layout_height="@dimen/dp65"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20" />
+
+    <ImageView
+        android:id="@+id/simple_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:src="@mipmap/mopai_xiazai"
+        android:visibility="visible" />
+
+    <!--进度条-->
+    <com.merrichat.net.view.CircularProgressView
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp27"
+        android:visibility="gone"
+        fresco:borderWidth="@dimen/dp2" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <include layout="@layout/activity_title" />
+
+        <TextView
+            android:id="@+id/tv_complaint"
+            style="@style/text_222222_15sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:text="投诉" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cansee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/tv_cansee_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="不让他看我的朋友圈"
+                android:textColor="@drawable/selector_homesetting_text"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_cansee_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/jubao_click_xuanzhong2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/line_width_left" />
+
+        <RelativeLayout
+            android:id="@+id/rl_nosee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:background="@color/white"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/tv_nosee_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="不看他的朋友圈"
+                android:textColor="@drawable/selector_homesetting_text"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_nosee_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/jubao_click_xuanzhong2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/line_width_match" />
+    <TextView
+        android:id="@+id/tv_delete"
+        android:text="删除"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center"
+        style="@style/text_ffffff_15sp"
+        android:background="@drawable/shape_onclick"
+        android:layout_marginTop="@dimen/dp100"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50" />
+</LinearLayout>

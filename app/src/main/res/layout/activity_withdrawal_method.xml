@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:text="支付宝"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/base_E2E5E7" />
+
+    <LinearLayout
+        android:id="@+id/ll_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:text="微信"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+</LinearLayout>

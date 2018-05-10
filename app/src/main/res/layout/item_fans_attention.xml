@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.merrichat.net.view.CircleImageView
+        android:id="@+id/cv_fans_photo"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp15"
+        android:background="@mipmap/ic_preloading" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ll_button"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_friends_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/dp13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_add_attention"
+                android:layout_width="@dimen/dp65"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/shape_attention_already"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:text="+ 关注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp11"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_cancle_attention"
+                android:layout_width="@dimen/dp65"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/shape_attention_cancle"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:text="取消关注"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/dp11"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_width_match"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

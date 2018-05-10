@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/chenjingjing/Desktop/merri-old/aaaaa/matisse/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/chenjingjing/.android/build-cache/c73f0d4530f001ebbc1cf429c2a2973e5a4c6346/output/res/anim/abc_slide_in_top.xml"
+    }
+]

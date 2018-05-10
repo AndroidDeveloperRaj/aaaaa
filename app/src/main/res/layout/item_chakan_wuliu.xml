@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="2px"
+            android:layout_height="30dp"
+            android:background="@color/base_E2E5E7" />
+
+        <ImageView
+            android:id="@+id/iv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chakanwuliu_one_2x" />
+
+        <TextView
+            android:layout_width="2px"
+            android:layout_height="fill_parent"
+            android:background="@color/base_E2E5E7" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="20dp"
+            android:autoLink="phone"
+            android:text="tv_content"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/dp13" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="TextView"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/dp13" />
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginTop="10dp"
+            android:background="@color/base_E2E5E7" />
+    </RelativeLayout>
+</LinearLayout>

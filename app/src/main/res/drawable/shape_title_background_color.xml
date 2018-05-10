@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--  颜色渐变
+    说明：
+
+        （1）shape节点配置的是图形的形式，主要包括方形、圆形等，上边代码为方形。
+
+        （2）gradient节点主要配置起点颜色、终点颜色及中间点的颜色、坐标、渐变效果（0，90，180从左到右渐变，270从上到下渐变）默认从左到右。
+
+        （3）corners节点配置四周圆角的半径。
+    -->
+    <gradient
+        android:angle="0"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:endColor="@color/normal_red"
+        android:startColor="@color/title_start" />
+
+</shape>
+

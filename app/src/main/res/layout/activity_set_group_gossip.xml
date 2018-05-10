@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_allow_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44">
+
+            <TextView
+                android:id="@+id/tv_allow_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="允许所与人发言"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_allow_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/accept_2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:background="@color/background" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_limit_section"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44">
+
+            <TextView
+                android:id="@+id/tv_limit_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="只允许群主和管理员发言"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_limit_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/accept_2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            android:background="@color/background" />
+
+        <RelativeLayout
+            android:id="@+id/rl_designate_gag"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="指定禁言"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/base_E2E5E7" />
+
+        <RelativeLayout
+            android:id="@+id/rl_list_of_gossip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="禁言名单"
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@mipmap/xiayiceng_button_tongyong2x" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

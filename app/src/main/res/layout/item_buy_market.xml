@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_padding_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp140"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView"
+            android:layout_width="@dimen/dp140"
+            android:layout_height="@dimen/dp140"
+            fresco:placeholderImage="@mipmap/load"
+            fresco:placeholderImageScaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp5">
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0"
+                android:layout_weight="1.5"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="尼古拉斯-赵四专卖店【益达一桶9.9】"
+                android:textColor="@color/black_262626"
+                android:textSize="@dimen/sp13" />
+
+            <LinearLayout
+                android:id="@+id/lin_attestation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btn_attestation"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp15"
+                    android:background="@drawable/shape_market_name"
+                    android:text="已实名认证"
+                    android:textColor="@color/green_39C72A"
+                    android:textSize="@dimen/sp9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp0"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_character"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:id="@+id/tv_market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="0.00"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/sp13" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="团购价："
+                    android:textColor="@color/normal_red"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_character"
+                    android:textColor="@color/normal_red"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:id="@+id/tv_market_price_tuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="0.00"
+                    android:textColor="@color/normal_red"
+                    android:textSize="@dimen/sp13" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp0"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_market_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:enabled="true"
+                    android:maxLength="7"
+                    android:text="尼古拉斯-赵四"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/sp10" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="已成交1单"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/sp10"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买"
+                        android:textColor="@color/normal_red"
+                        android:textSize="@dimen/sp10" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:src="@mipmap/xiayicengfen_shouqi" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp150"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/green_DEDFE0" />
+
+</LinearLayout>

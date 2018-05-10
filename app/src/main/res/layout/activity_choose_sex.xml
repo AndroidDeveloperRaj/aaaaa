@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/choose_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp16"
+        android:src="@mipmap/login_close"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp2.5"
+            android:gravity="center"
+            android:text="选择你的性别"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/sp22"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp35"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp38"
+        android:paddingRight="@dimen/dp38">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="虚假性别讯美平台将坚决封号处理!"
+            android:textSize="@dimen/sp13"
+            android:textColor="@color/normal_black"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp28">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <RadioButton
+                    android:id="@+id/radio_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableTop="@drawable/radio_sex_man_selector"/>
+
+                <RadioButton
+                    android:id="@+id/radio_women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableTop="@drawable/radio_sex_women_selector"
+                    android:layout_marginLeft="@dimen/dp50"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="@color/blue_096FFF"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp15"/>
+
+                <TextView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="@color/normal_red"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp50"
+                    android:textSize="@dimen/sp15"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="wrap_content"
+                    android:text="male"
+                    android:textColor="@color/blue_096FFF"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp11"/>
+
+                <TextView
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+                    android:textColor="@color/normal_red"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp50"
+                    android:textSize="@dimen/sp11"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp34"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp2.5"
+                android:gravity="center"
+                android:text="选择你的出生日期"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp22"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_choose_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择出生日期"
+            android:textSize="@dimen/sp15"
+            android:textColor="@color/normal_black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp40"
+            android:padding="@dimen/dp10"
+            android:drawableRight="@mipmap/icon_red_sj_down"
+            android:drawablePadding="@dimen/dp5"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginTop="@dimen/dp15"
+            android:background="@color/line_grayD9"/>
+
+        <Button
+            android:id="@+id/btn_choose_finish"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp40"
+            android:background="@drawable/shape_button_login"
+            android:text="进入讯美"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15"/>
+
+    </LinearLayout>
+</LinearLayout>

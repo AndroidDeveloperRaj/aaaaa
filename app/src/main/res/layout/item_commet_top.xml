@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/show_evaluate_header"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            fresco:placeholderImage="@mipmap/icon_logo"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true">
+
+        </com.facebook.drawee.view.SimpleDraweeView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="阿尔法"
+                android:textColor="@color/gray_deep"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="我们都深陷红尘，但总有人仰望星空。这款星辰蜡
+让你喜我们都深陷红尘，但总有人仰望星空。这款
+星辰蜡让你喜"
+                android:textColor="@color/black_new_two"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp26"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="6-20 18:39"
+                    android:textColor="@color/base_9E9FAB"
+                    android:textSize="@dimen/dp10" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp26"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp5"
+                        android:text="回复"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/dp10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp26"
+                        android:gravity="center_vertical"
+                        android:text="·"
+                        android:textColor="@color/black_new_two"
+                        android:textSize="@dimen/dp10"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp26"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp26"
+                            android:paddingLeft="@dimen/dp10"
+                            android:src="@mipmap/zan1_2x" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp26"
+                            android:layout_marginLeft="@dimen/dp3"
+                            android:gravity="center_vertical"
+                            android:text="99"
+                            android:textColor="@color/normal_red"
+                            android:textSize="@dimen/dp10" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_commet_min" />
+</LinearLayout>

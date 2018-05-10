@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glview_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.view.SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/dp30">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@mipmap/icon_tp_close" />
+
+        <TextView
+            android:id="@+id/tv_filter_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp60"
+            android:text="筛选条件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/tv_encounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="遇到的人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dp50"
+        android:background="@drawable/shape_sou_suo"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+</FrameLayout>
+

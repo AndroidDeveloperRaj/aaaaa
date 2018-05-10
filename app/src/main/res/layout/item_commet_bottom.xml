@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <com.merrichat.net.view.DrawableCenterTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp43"
+        android:layout_marginLeft="@dimen/dp57"
+        android:drawablePadding="@dimen/dp5"
+        android:drawableRight="@drawable/shape_jiantou_dowm"
+        android:gravity="center"
+        android:text="查看6条回复/收起所有回复"
+        android:textColor="@color/normal_red"
+        android:textSize="@dimen/dp12" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp92"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/iv_draft_img"
+            android:layout_width="@dimen/dp72"
+            android:layout_height="@dimen/dp72"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_continue_edit"
+                    style="@style/text_222222_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="继续编辑" />
+
+                <TextView
+                    android:id="@+id/tv_draft_date"
+                    style="@style/text_888888_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20129888" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_draft_share"
+                style="@style/text_ffffff_15sp"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_draft_sharebutton"
+                android:gravity="center"
+                android:text="分享" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/line_width_left" />
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp15">
+
+        <ImageView
+            android:id="@+id/iv_add_photovideo"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp24"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/tuwen_button_jia3x" />
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/ll_add_content"
+            android:layout_width="@dimen/dp190"
+            android:layout_height="@dimen/dp36"
+            android:background="@drawable/shape_photovedio_item"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_add_textcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/tuwen_tianjiawenzi3x" />
+
+            <ImageView
+                android:id="@+id/iv_add_piccontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp37"
+                android:padding="@dimen/dp5"
+                android:src="@mipmap/tuwen_tianjiazhaopian3x" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/shape_photovedio_item"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        >
+
+        <ImageView
+            android:paddingLeft="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10"
+            android:paddingRight="@dimen/dp5"
+            android:id="@+id/iv_delete_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tuwen_shanchu" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_img"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80">
+
+                <ImageView
+                    android:id="@+id/iv_photofilm_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_weijiazai_pic"
+                    style="@style/text_525252_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_photovedio_pic"
+                    android:gravity="center"
+                    android:text="添加图片" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp10">
+
+                <ImageView
+                    android:id="@+id/iv_check_shefengmian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_photovideo_fengmian" />
+
+                <TextView
+                    style="@style/text_444444_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:text="设为封面" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_textcontent"
+                style="@style/text_222222_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/rl_wenzi_shangxia"
+                android:background="@null"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:hint="请输入文字描述"
+                android:paddingLeft="@dimen/dp10"
+                android:text=""
+                android:textColorHint="@color/base_888888" />
+
+            <RelativeLayout
+                android:id="@+id/rl_wenzi_shangxia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/iv_toup"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp5"
+                    android:src="@mipmap/tuwen_shangyidong3x" />
+
+                <ImageView
+                    android:id="@+id/iv_todown"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingLeft="@dimen/dp5"
+                    android:src="@mipmap/tuwen_xiayidong3x" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

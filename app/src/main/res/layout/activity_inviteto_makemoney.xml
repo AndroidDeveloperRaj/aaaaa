@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/sg_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp74"
+        android:layout_marginRight="@dimen/dp74"
+        android:layout_marginTop="10dp"
+        tl:tl_bar_color="#ffffff"
+        tl:tl_divider_color="@color/transparent"
+        tl:tl_indicator_color="@color/FF3D6F"
+        tl:tl_indicator_corner_radius="4dp"
+        tl:tl_tab_padding="20dp"
+        tl:tl_textUnselectColor="@color/base_6D6D6D"
+        tl:tl_textsize="@dimen/dp13" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_toshare_makemoney"
+        android:layout_below="@+id/sg_tablayout"
+        android:layout_marginTop="@dimen/dp10" />
+
+    <TextView
+        android:id="@+id/tv_toshare_makemoney"
+        style="@style/text_ffffff_15sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/FF3D6F"
+        android:gravity="center"
+        android:text="收徒赚钱" />
+</RelativeLayout>

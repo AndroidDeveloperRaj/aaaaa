@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/start"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_left"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent"/>
+
+        <com.merrichat.net.view.PagerSlidingTabStrip
+            android:id="@+id/page_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/view_right"
+            android:layout_toRightOf="@+id/view_left"
+            android:textColor="@color/base_9E9FAB"
+            android:textSize="@dimen/sp15"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsIndicatorColor="@color/normal_red"
+            app:pstsIndicatorHeight="@dimen/dp2"
+            app:pstsScaleZoomMax="0.0"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="false"
+            app:pstsTextSelectedColor="@color/normal_red"
+            app:pstsUnderlineHeight="0dp"/>
+
+        <View
+            android:id="@+id/view_right"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/iv_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:scaleType="center"
+            android:src="@mipmap/fujin_shaixuan"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/lay_upload"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_2"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="正在上传中…"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lay_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_refresh_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_refresh_upload"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dele_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_dele_upload"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pb_upload"
+                style="@style/ProgressBar_Mini"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:max="100"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:progress="0"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp21"
+            android:layout_marginRight="@dimen/dp21">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/waiquan"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/neiquan"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/xiangji"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

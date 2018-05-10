@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include layout="@layout/activity_title" />
+
+    <TextView
+        android:id="@+id/tv_top_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="请输入原支付密码"
+        android:textColor="@color/black_new_two"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/lay_input"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_below="@+id/tv_top_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_button_fans"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="0.66dp"
+        android:paddingRight="0.66dp">
+
+        <FrameLayout
+            android:id="@+id/fl_pwd1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_pass1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/img_pass1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/img_psw_bg"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.66dp"
+            android:layout_marginTop="0.66dp"
+            android:background="@color/base_E2E5E7" />
+
+        <FrameLayout
+            android:id="@+id/fl_pwd2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_pass2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/img_pass2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/img_psw_bg"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.66dp"
+            android:layout_marginTop="0.66dp"
+            android:background="@color/base_E2E5E7" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_pwd3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_pass3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/img_pass3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/img_psw_bg"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.66dp"
+            android:layout_marginTop="0.66dp"
+            android:background="@color/base_E2E5E7" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_pwd4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_pass4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/img_pass4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/img_psw_bg"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.66dp"
+            android:layout_marginTop="0.66dp"
+            android:background="@color/base_E2E5E7" />
+
+        <FrameLayout
+            android:id="@+id/fl_pwd5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_pass5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/img_pass5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/img_psw_bg"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0.66dp"
+            android:layout_marginTop="0.66dp"
+            android:background="@color/base_E2E5E7" />
+
+        <FrameLayout
+            android:id="@+id/fl_pwd6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_pass6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/img_pass6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/img_psw_bg"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.merrichat.net.view.VirtualKeyboardView
+        android:id="@+id/virtualKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_input"
+        android:layout_gravity="bottom"
+        android:background="@color/background" />
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp57"
+        android:background="@drawable/shape_button_show_evaluate"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:paddingTop="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp20"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                fresco:placeholderImage="@mipmap/icon_logo"
+                fresco:placeholderImageScaleType="fitXY"
+                fresco:roundAsCircle="true">
+
+            </com.facebook.drawee.view.SimpleDraweeView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="阿尔法"
+                android:textColor="@color/gray_deep"
+                android:textSize="@dimen/dp10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="回复"
+                android:textColor="@color/gray_deep"
+                android:textSize="@dimen/dp10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=" @sdsds"
+                android:textColor="@color/base_1449fb"
+                android:textSize="@dimen/dp10" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="我们都深陷红尘，但总有人仰望星空。这款星辰蜡
+让你喜我们都深陷红尘，但总有人仰望星空。这款
+星辰蜡让你喜"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="6-20 18:39"
+                android:textColor="@color/base_9E9FAB"
+                android:textSize="@dimen/dp10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:text="回复"
+                    android:textColor="@color/normal_gray"
+                    android:textSize="@dimen/dp10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="·"
+                    android:textColor="@color/black_new_two"
+                    android:textSize="@dimen/dp10"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dp10"
+                        android:src="@mipmap/zan2_2x" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:gravity="center_vertical"
+                        android:text="赞"
+                        android:textColor="@color/normal_gray"
+                        android:textSize="@dimen/dp10" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

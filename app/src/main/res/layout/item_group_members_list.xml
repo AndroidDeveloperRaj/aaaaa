@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_photo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp55"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.merrichat.net.view.CircleImageView
+                android:id="@+id/civ_member_photo"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@mipmap/ic_preloading" />
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text=""
+                android:textColor="@color/black_new_two"
+                android:textSize="@dimen/dp15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_invite_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp55"
+        android:background="@color/base_E2E5E7" />
+
+</LinearLayout>

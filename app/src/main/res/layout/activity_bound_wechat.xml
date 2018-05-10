@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/choose_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp16"
+        android:src="@mipmap/login_close"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp2.5"
+            android:gravity="center"
+            android:text="绑定微信"
+            android:textColor="@color/normal_black"
+            android:textSize="@dimen/sp22"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/wechat_login"
+        android:layout_marginTop="@dimen/dp45"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_wechat_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@drawable/shape_button_login_true"
+        android:text="绑定微信"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp15"
+        android:layout_marginLeft="@dimen/dp38"
+        android:layout_marginRight="@dimen/dp38"/>
+
+</LinearLayout>

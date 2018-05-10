@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <SurfaceView
+        android:id="@+id/my_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/touch_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_shai_xuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/dp30">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@mipmap/icon_tp_close" />
+
+        <TextView
+            android:id="@+id/tv_filter_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp60"
+            android:text="筛选条件"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+
+        <TextView
+            android:id="@+id/tv_encounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="遇到的人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.merrichat.net.view.CircleImageView
+            android:id="@+id/civ_my_photo"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:background="@mipmap/ic_preloading" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="00：00"
+            android:textColor="@color/text_decfcf"
+            android:textSize="@dimen/dp22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:text="正在为您寻找新的朋友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dp50"
+        android:background="@drawable/shape_sou_suo"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+
+    <com.merrichat.net.activity.meiyu.fragments.view.GiftItemView
+        android:id="@+id/gift_item_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:layout_marginTop="@dimen/dp100"
+        android:clipChildren="true"></com.merrichat.net.activity.meiyu.fragments.view.GiftItemView>
+
+
+    <TextView
+        android:id="@+id/gift"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_72"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="礼物" />
+
+
+</FrameLayout>

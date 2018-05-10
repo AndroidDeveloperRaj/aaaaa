@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_tab_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp92">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_left"
+            android:layout_width="@dimen/dp72"
+            android:layout_height="@dimen/dp72"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10">
+            <!--fresco:placeholderImage="@mipmap/music_icon"-->
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/simpleDraweeView"
+                android:layout_width="@dimen/dp72"
+                android:layout_height="@dimen/dp72"
+                android:background="@color/normal_red"
+                fresco:placeholderImageScaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkbox_music_player"
+                android:layout_width="@dimen/dp19"
+                android:layout_height="@dimen/dp22"
+                android:layout_centerInParent="true"
+                android:button="@drawable/checkbox_video_music_selector"
+                android:clickable="false" />
+
+            <com.merrichat.net.view.CircularProgressView
+                android:id="@+id/progressView"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                fresco:borderWidth="@dimen/dp2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:layout_toLeftOf="@+id/btn_employ"
+            android:layout_toRightOf="@+id/rel_left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/tv_music_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="MUSIC"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_music_author"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Author"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_music_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Time"
+                android:textColor="@color/normal_gray"
+                android:textSize="@dimen/sp10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_employ"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/shape_button_video_music"
+            android:text="使用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp13" />
+
+        <com.merrichat.net.view.CircularProgressView
+            android:id="@+id/progressView_downLoad"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            fresco:borderWidth="@dimen/dp2"
+            android:layout_marginRight="@dimen/dp5"/>
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="下载中..."
+            android:textColor="@color/normal_red"
+            android:textSize="@dimen/sp10"
+            android:visibility="gone" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp100"
+            android:background="@color/base_E2E5E7" />
+    </RelativeLayout>
+</LinearLayout>
+

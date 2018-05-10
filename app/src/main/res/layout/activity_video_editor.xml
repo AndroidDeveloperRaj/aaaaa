@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rel_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_function"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_title_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333333">
+
+            <com.merrichat.net.activity.video.player.VideoFrameLayout
+                android:id="@+id/rel_player_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <android.opengl.GLSurfaceView
+                    android:id="@+id/glSurfaceView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </com.merrichat.net.activity.video.player.VideoFrameLayout>
+
+            <!--android:src="@mipmap/shipin_button_zanting_small"-->
+            <ImageView
+                android:id="@+id/video_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dp10"
+                android:src="@mipmap/shipin_button_zanting_small"/>
+
+            <ImageView
+                android:id="@+id/imageView_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radio_bottom"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp10"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/lin_cut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp15"
+                android:paddingTop="@dimen/dp15">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/red_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/line_cut"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/shape_button_video_editor"
+                        android:drawableTop="@mipmap/cancel"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="撤销"
+                        android:textColor="#777777"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_insert"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/shape_button_video_editor"
+                        android:drawableTop="@mipmap/insert"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="插入"
+                        android:textColor="#777777"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_spilt"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/shape_button_video_editor"
+                        android:drawableTop="@mipmap/spilt"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="拆分"
+                        android:textColor="#777777"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_copy"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/shape_button_video_editor"
+                        android:drawableTop="@mipmap/copy"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="拷贝"
+                        android:textColor="#777777"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_upend"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/shape_button_video_editor"
+                        android:drawableTop="@mipmap/upend"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="倒放"
+                        android:textColor="#777777"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_delete"
+                        android:layout_width="50dp"
+                        android:layout_height="54dp"
+                        android:background="@drawable/shape_button_video_editor"
+                        android:drawableTop="@mipmap/delete"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="删除"
+                        android:textColor="#777777"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_volume"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp115"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原声"
+                    android:textColor="@color/text_525252"
+                    android:textSize="@dimen/sp15"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/dp2"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/seekbar_background"
+                    android:thumb="@mipmap/seekbar_1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配乐"
+                    android:textColor="@color/text_525252"
+                    android:textSize="@dimen/sp15"/>
+
+                <SeekBar
+                    android:id="@+id/seekBar_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/dp2"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/seekbar_background"
+                    android:thumb="@mipmap/seekbar_1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_cover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp115"
+            android:paddingTop="@dimen/dp40"
+            android:paddingBottom="@dimen/dp35"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_marginRight="@dimen/dp25"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_filter_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="滤镜"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_music"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_music_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="音乐"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_cut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_cut_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="剪裁"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_special"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_special_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="特效"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_video_more_selector"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="更多"
+            android:textColor="@drawable/radio_video_cut_selector_text_color"
+            android:textSize="11dp"/>
+    </RadioGroup>
+</RelativeLayout>

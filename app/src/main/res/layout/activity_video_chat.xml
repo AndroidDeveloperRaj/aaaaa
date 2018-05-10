@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glview_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/touch_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <com.merrichat.net.view.CircleImageView
+        android:id="@+id/iv_video_img"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dp16"
+        android:background="@mipmap/ic_preloading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_toLeftOf="@+id/tv_hang_up"
+        android:layout_toRightOf="@+id/iv_video_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp22" />
+
+        <TextView
+            android:id="@+id/tv_video_conneting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tv_hang_up"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp32"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@drawable/shape_close_hui_circle"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dp10"
+            android:layout_height="@dimen/dp10"
+            android:background="@mipmap/icon_tp_close"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_gift_label"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp25"
+        android:layout_marginRight="@dimen/dp35"
+        android:background="@mipmap/ic_gift_label" />
+
+    <com.merrichat.net.activity.meiyu.fragments.view.GiftItemView
+        android:id="@+id/gift_item_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp170"
+        android:clipChildren="true" />
+
+    <TextView
+        android:id="@+id/tv_answer_hang_up"
+        android:layout_width="@dimen/dp66"
+        android:layout_height="@dimen/dp66"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@mipmap/icon_chat_hang_up"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+    <TextView
+        android:id="@+id/tv_hang_up_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="挂断"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+    <TextView
+        android:id="@+id/connection_time"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp130"
+        android:layout_marginTop="@dimen/dp35"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp15" />
+
+</RelativeLayout>

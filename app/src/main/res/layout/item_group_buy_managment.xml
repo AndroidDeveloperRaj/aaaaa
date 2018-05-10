@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp10"
+        android:background="@color/background" />
+
+    <RelativeLayout
+        android:id="@+id/rl_buyer_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44">
+
+        <TextView
+            android:id="@+id/tv_buyer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@+id/iv_jian_tou"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="买家地址："
+            android:textColor="@color/black_262626"
+            android:textSize="@dimen/dp14" />
+
+        <ImageView
+            android:id="@+id/iv_jian_tou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@mipmap/xiayiceng_button_tongyong2x" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/base_E2E5E7" />
+
+    <LinearLayout
+        android:id="@+id/ll_buyer_information"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp68"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_buyer_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="买家昵称："
+            android:textColor="@color/base_9E9FAB"
+            android:textSize="@dimen/dp14" />
+
+        <TextView
+            android:id="@+id/tv_buyer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="买家姓名:"
+            android:textColor="@color/base_9E9FAB"
+            android:textSize="@dimen/dp14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sell_content"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="@color/white_2">
+
+        <ImageView
+            android:id="@+id/iv_sell_content_url"
+            android:layout_width="@dimen/dp92"
+            android:layout_height="@dimen/dp92"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@color/background" />
+
+        <TextView
+            android:id="@+id/tv_sell_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp18"
+            android:layout_toRightOf="@+id/iv_sell_content_url"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/black_262626"
+            android:textSize="@dimen/sp15" />
+
+
+        <TextView
+            android:id="@+id/tv_sell_content_discripe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sell_content_title"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@+id/iv_sell_content_url"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_order_pay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="@dimen/dp10"
+        android:gravity="center_vertical|right"
+        android:text="共1件商品 合计：2688.9 (含运费 0.00)"
+        android:textColor="@color/normal_black" />
+
+    <LinearLayout
+        android:id="@+id/ll_buyer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp44"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:text="卖家昵称：一只小可爱"
+            android:textColor="@color/base_9E9FAB"
+            android:textSize="@dimen/dp14" />
+
+        <com.merrichat.net.view.MyListView
+            android:id="@+id/my_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+          ></com.merrichat.net.view.MyListView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@color/line_grayD9" />
+
+    <RelativeLayout
+        android:id="@+id/rl_commnuication"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp65">
+
+        <TextView
+            android:id="@+id/tv_call_seller"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp25"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_toLeftOf="@+id/tv_contact_seller"
+            android:background="@drawable/shape_contact_buyer"
+            android:gravity="center"
+            android:text="联系买家"
+            android:textColor="@color/base_093FFF"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tv_contact_seller"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/shape_contact_seller"
+            android:gravity="center"
+            android:text="联系卖家"
+            android:textColor="@color/FF3D6F"
+            android:textSize="@dimen/sp12" />
+
+
+        <TextView
+            android:id="@+id/tv_check_trans_map"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/shape_contact_cancle"
+            android:gravity="center"
+            android:text="查看物流"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/sp12"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44">
+
+        <TextView
+            android:id="@+id/tv_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:layout_centerInParent="true"
+            android:textColor="@color/base_888888"
+            android:textSize="@dimen/sp15"/>
+
+        <ImageView
+            android:id="@+id/iv_close_comment"
+            android:layout_width="@dimen/dp44"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp15"
+            android:src="@mipmap/login_close"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/base_E2E5E7"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rel_bottom"
+        android:layout_below="@+id/title_include"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include layout="@layout/layout_empty"/>
+
+        </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:elevation="@dimen/dp10"
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/editText_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp7"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp7"
+            android:layout_toLeftOf="@+id/btn_show_release"
+            android:background="@drawable/shape_white"
+            android:hint="评论才是最真实的哦~"
+            android:paddingLeft="@dimen/dp10"
+            android:textSize="@dimen/dp14"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+</LinearLayout>

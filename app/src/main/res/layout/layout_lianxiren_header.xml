@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header_search" />
+
+    <LinearLayout
+        android:id="@+id/ll_new_friends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@mipmap/lianxiren_xinpengyou_2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp7"
+            android:text="新的朋友"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_new_friends_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/shape_tip_number"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/line_width_left" />
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@mipmap/lianxiren_qunzu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp7"
+            android:text="群组列表"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_group_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/shape_tip_number"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View style="@style/line_width_left" />
+
+    <LinearLayout
+        android:id="@+id/lay_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@mipmap/icon_add_contact" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp7"
+            android:text="手机联系人"
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp15" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/dp10"
+        android:text="我的好友"
+        android:textColor="@color/base_888888"
+        android:textSize="@dimen/dp13" />
+</LinearLayout>

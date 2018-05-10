@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp40"
+        android:text="修改密码"
+        android:textColor="@color/black_new_two"
+        android:textSize="@dimen/sp22" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingRight="@dimen/dp40">
+
+            <TextView
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="旧密码"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/dp15"
+                android:background="@color/ffe2e5e7" />
+
+            <com.merrichat.net.view.ClearEditText
+                android:id="@+id/editText_old_pwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="请输入原密码"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/dp20"
+                android:password="true"
+                android:textColor="@color/normal_black"
+                android:textColorHint="@color/login_edt_hint_color"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp40"
+            android:background="@color/ffe2e5e7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingRight="@dimen/dp40">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp20"
+                android:text="新密码"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/dp15"
+                android:background="@color/ffe2e5e7" />
+
+            <com.merrichat.net.view.ClearEditText
+                android:id="@+id/editText_new_pwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="请输入新密码"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/dp20"
+                android:password="true"
+                android:textColor="@color/normal_black"
+                android:textColorHint="@color/login_edt_hint_color"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0.5"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp40"
+            android:background="@color/ffe2e5e7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingRight="@dimen/dp40">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp20"
+                android:text="新密码"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/dp15"
+                android:background="@color/ffe2e5e7" />
+
+            <com.merrichat.net.view.ClearEditText
+                android:id="@+id/editText_new_pwd_again"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="请重复输入新密码"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/dp20"
+                android:password="true"
+                android:textColor="@color/normal_black"
+                android:textColorHint="@color/login_edt_hint_color"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* "
+                android:textColor="@color/register_txt_red"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textColor="@color/normal_black"
+                android:textSize="@dimen/sp15" />
+
+        </LinearLayout>
+
+        <com.merrichat.net.view.ClearEditText
+            android:id="@+id/editText_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="4"
+            android:background="@null"
+            android:paddingLeft="@dimen/dp20"
+            android:textColor="@color/normal_black"
+            android:textColorHint="@color/login_edt_hint_color"
+            android:textSize="@dimen/sp15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册后代表我接受"
+            android:textColor="@color/register_txt_gray"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《服务条款和隐私政策》"
+            android:textColor="@color/normal_red"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:background="@color/ffe2e5e7" />
+
+    <Button
+        android:id="@+id/button_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp35"
+        android:background="@drawable/shape_button_login"
+        android:text="修改密码"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp15" />
+
+</LinearLayout>

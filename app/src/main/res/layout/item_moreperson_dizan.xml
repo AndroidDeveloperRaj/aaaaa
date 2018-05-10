@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp55"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/clv_header"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp10"
+        app:placeholderImage="@mipmap/ic_preloading"
+        app:roundAsCircle="true"
+        app:roundingBorderWidth="@dimen/dp1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/clv_header"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nike_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/black_new_two"
+            android:textSize="@dimen/dp15" />
+
+        <View
+            style="@style/line_width_left"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
